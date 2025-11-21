@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأحداث المجمعة</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: white;
+            padding: 15px 20px;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .search-bar {
+            flex: 1;
+            max-width: 400px;
+            margin: 0 20px;
+            position: relative;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 10px 40px 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            background-color: #f8f9fa;
+            font-size: 16px;
+        }
+
+        .search-bar .search-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #666;
+        }
+
+        .city-filter {
+            margin: 0 10px;
+        }
+
+        .city-filter select {
+            padding: 10px 30px 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            background-color: #f8f9fa;
+            font-size: 14px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .app-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .hamburger {
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .category-nav {
+            background-color: white;
+            padding: 10px 20px;
+            border-bottom: 1px solid #e9ecef;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .category-tags {
+            display: flex;
+            gap: 10px;
+        }
+
+        .category-tag {
+            background-color: #f8f9fa;
+            color: #666;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 14px;
+            border: 1px solid #e9ecef;
+            transition: all 0.2s;
+        }
+
+        .category-tag.active,
+        .category-tag:hover {
+            background-color: #28a745;
+            color: white;
+            border-color: #28a745;
+        }
+
+        .main-layout {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .main-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .sidebar {
+            width: 300px;
+        }
+
+        .hero-article {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .hero-article a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .hero-content {
+            padding: 20px;
+        }
+
+        .hero-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+        .hero-meta {
+            display: flex;
+            gap: 15px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        #news-feed {
+            display: grid;
+            gap: 15px;
+        }
+
+        .news-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .news-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .news-content {
+            padding: 15px;
+        }
+
+        .news-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+        .news-meta {
+            display: flex;
+            justify-content: space-between;
+            color: #666;
+            font-size: 13px;
+        }
+
+        .sidebar-section {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0 0 15px 0;
+            color: #333;
+        }
+
+        .sidebar-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #f8f9fa;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: color 0.2s;
+        }
+
+        .sidebar-item:hover {
+            color: #28a745;
+        }
+
+        .sidebar-item:last-child {
+            border-bottom: none;
+        }
+
+        .category-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0;
+            border-bottom: 1px solid #f8f9fa;
+        }
+
+        .category-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+
+        .trending-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .bias-bar-compact {
+            height: 4px;
+            background-color: #f0f0f0;
+            border-radius: 2px;
+            overflow: hidden;
+            display: flex;
+            margin: 8px 0;
+        }
+
+        .bias-segment-compact {
+            height: 100%;
+            transition: width 0.3s ease;
+        }
+
+        .segment-pro {
+            background-color: #007bff;
+        }
+
+        .segment-neutral {
+            background-color: #6c757d;
+        }
+
+        .segment-oppose {
+            background-color: #dc3545;
+        }
+
+        @media (max-width: 768px) {
+            .main-layout {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+
+            .hero-image {
+                height: 200px;
+            }
+
+            .header {
+                flex-wrap: wrap;
+            }
+
+            .search-bar {
+                order: 3;
+                flex-basis: 100%;
+                margin: 10px 0 0 0;
+            }
+
+            .city-filter {
+                order: 2;
+                flex-basis: 100%;
+                margin: 10px 0 0 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-actions">
+            <a href="{{ url_for('index') }}">
+                <img src="{{ url_for('static', filename='img/ic_launcher_hdpi.png') }}" alt="App Icon" class="app-icon">
+            </a>
+            <button class="hamburger">☰</button>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="البحث في الأخبار...">
+            <span class="search-icon">🔍</span>
+        </div>
+        <div class="city-filter">
+            <select id="city-select">
+                <option value="">كل المدن</option>
+                {% if all_cities %}
+                {% for city in all_cities %}
+                <option value="{{ city }}" {% if current_city==city %}selected{% endif %}>{{ city }}</option>
+                {% endfor %}
+                {% endif %}
+            </select>
+        </div>
+    </header>
+
+    <nav class="category-nav">
+        <div class="category-tags" id="category-tags">
+            <a href="#" class="category-tag active" data-category="all">الكل</a>
+        </div>
+    </nav>
+
+    <main class="main-layout">
+        <div class="main-content">
+            {% if clusters %}
+            <article class="hero-article">
+                <a href="{{ url_for('event', cluster_id=clusters[0].id) }}">
+                    {% if clusters[0].first_article and clusters[0].first_article.image_url %}
+                    <img src="{{ clusters[0].first_article.image_url }}" alt="{{ clusters[0].title }}"
+                        class="hero-image" onerror="this.style.display='none'">
+                    {% endif %}
+                    <div class="hero-content">
+                        <h1 class="hero-title">{{ clusters[0].title }}</h1>
+                        <div class="hero-meta">
+                            <span>عدد المصادر: {{ clusters[0].number_of_sources }}</span>
+                            <span>{{ clusters[0].published_at | timeago_arabic }}</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            {% endif %}
+
+            <div id="news-feed">
+                {% for cluster in clusters[1:] %}
+                <a href="{{ url_for('event', cluster_id=cluster.id) }}" class="news-card">
+                    {% if cluster.image_url %}
+                    <img src="{{ cluster.image_url }}" alt="{{ cluster.title }}" class="news-image"
+                        onerror="this.style.display='none'">
+                    {% endif %}
+                    <div class="news-content">
+                        {% if cluster.is_trending %}
+                        <div class="trending-badge">🔥 رائج</div>
+                        {% endif %}
+                        <h3 class="news-title">{{ cluster.headline }}</h3>
+
+                        {% if cluster.bias_distribution %}
+                        {% set pro = cluster.bias_distribution.pro_saf.percentage %}
+                        {% set neutral = cluster.bias_distribution.neutral.percentage %}
+                        {% set oppose = cluster.bias_distribution.oppose_saf.percentage %}
+
+                        <div class="bias-bar-compact">
+                            {% if pro > 0 %}
+                            <div class="bias-segment-compact segment-pro" style="width: {{ pro }}%"
+                                title="مؤيد للقوات المسلحة: {{ pro|round|int }}%"></div>
+                            {% endif %}
+                            {% if neutral > 0 %}
+                            <div class="bias-segment-compact segment-neutral" style="width: {{ neutral }}%"
+                                title="محايد: {{ neutral|round|int }}%"></div>
+                            {% endif %}
+                            {% if oppose > 0 %}
+                            <div class="bias-segment-compact segment-oppose" style="width: {{ oppose }}%"
+                                title="معارض للقوات المسلحة: {{ oppose|round|int }}%"></div>
+                            {% endif %}
+                        </div>
+
+                        {% set biases = [('مؤيد', pro), ('محايد', neutral), ('معارض', oppose)] %}
+                        {% set max_bias = biases | max(attribute=1) %}
+
+                        <div style="font-size: 12px; color: #666; margin-top: 4px; margin-bottom: 8px;">
+                            {{ max_bias[1]|round|int }}% تغطية {{ max_bias[0] }}
+                        </div>
+                        {% endif %}
+
+                        <div class="news-meta">
+                            <span>عدد المصادر: {{ cluster.number_of_sources }}</span>
+                            <span>{{ cluster.published_at | timeago_arabic }}</span>
+                        </div>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+            <div id="loading" class="loading" style="display: none;">جاري التحميل...</div>
+        </div>
+
+        <aside class="sidebar">
+            {% if war_clusters %}
+            <section class="sidebar-section" style="border-right: 4px solid #dc3545;">
+                <h3 class="sidebar-title" style="color: #dc3545;">أخبار الحرب</h3>
+                {% for cluster in war_clusters %}
+                <a href="{{ url_for('event', cluster_id=cluster.id) }}" class="sidebar-item">
+                    {{ cluster.title[:60] }}...
+                </a>
+                {% endfor %}
+            </section>
+            {% endif %}
+
+            {% if trending_clusters %}
+            <section class="sidebar-section" style="border-right: 4px solid #ffc107;">
+                <h3 class="sidebar-title" style="color: #d39e00;">🔥 الأكثر رواجاً</h3>
+                {% for cluster in trending_clusters %}
+                <a href="{{ url_for('event', cluster_id=cluster.id) }}" class="sidebar-item">
+                    {{ cluster.title[:60] }}...
+                </a>
+                {% endfor %}
+            </section>
+            {% endif %}
+
+            <section class="sidebar-section">
+                <h3 class="sidebar-title">آخر الأخبار</h3>
+                {% for cluster in clusters[:5] %}
+                <a href="{{ url_for('event', cluster_id=cluster.id) }}" class="sidebar-item">
+                    {{ cluster.title[:50] }}...
+                </a>
+                {% endfor %}
+            </section>
+
+            <section class="sidebar-section">
+                <h3 class="sidebar-title">التصنيفات</h3>
+                <div id="sidebar-categories"></div>
+            </section>
+        </aside>
+    </main>
+
+    <script>
+        let currentPage = 2;
+        let isLoading = false;
+        let currentCategory = 'all';
+        let currentQuery = '';
+        let currentCity = '{{ current_city if current_city else "" }}';
+
+        document.addEventListener('DOMContentLoaded', loadCategories);
+
+        window.addEventListener('scroll', () => {
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000 && !isLoading) {
+                loadMoreNews();
+            }
+        });
+
+        document.getElementById('search-input').addEventListener('input', debounce((e) => {
+            currentQuery = e.target.value;
+            reloadFeed();
+        }, 500));
+
+        document.getElementById('city-select').addEventListener('change', (e) => {
+            currentCity = e.target.value;
+            reloadFeed();
+        });
+
+        function loadCategories() {
+            fetch('/api/categories')
+                .then(response => response.json())
+                .then(categories => {
+                    const categoryTags = document.getElementById('category-tags');
+                    const sidebarCategories = document.getElementById('sidebar-categories');
+                    const colors = ['#28a745', '#007bff', '#ffc107', '#dc3545', '#6f42c1', '#17a2b8', '#fd7e14'];
+
+                    categories.forEach((category, index) => {
+                        const navTag = document.createElement('a');
+                        navTag.href = '#';
+                        navTag.className = 'category-tag';
+                        navTag.dataset.category = category;
+                        navTag.textContent = category;
+                        categoryTags.appendChild(navTag);
+
+                        const sidebarItem = document.createElement('div');
+                        sidebarItem.className = 'category-item';
+                        sidebarItem.innerHTML = `
+                            <div class="category-indicator" style="background-color: ${colors[index % colors.length]};"></div>
+                            <span>${category}</span>
+                        `;
+                        sidebarCategories.appendChild(sidebarItem);
+                    });
+
+                    document.querySelectorAll('.category-tag').forEach(tag => {
+                        tag.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            document.querySelectorAll('.category-tag').forEach(t => t.classList.remove('active'));
+                            tag.classList.add('active');
+                            currentCategory = tag.dataset.category;
+                            reloadFeed();
+                        });
+                    });
+                })
+                .catch(error => console.error('Error loading categories:', error));
+        }
+
+        function loadMoreNews() {
+            if (isLoading) return;
+            isLoading = true;
+            document.getElementById('loading').style.display = 'block';
+
+            let url = `/api/clusters?page=${currentPage}&q=${encodeURIComponent(currentQuery)}`;
+            if (currentCategory !== 'all') {
+                url += `&category=${encodeURIComponent(currentCategory)}`;
+            }
+            if (currentCity) {
+                url += `&city=${encodeURIComponent(currentCity)}`;
+            }
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.length > 0) {
+                        const feed = document.getElementById('news-feed');
+                        data.forEach(cluster => {
+                            const card = createNewsCard(cluster);
+                            feed.appendChild(card);
+                        });
+                        currentPage++;
+                    }
+                })
+                .catch(error => console.error('Error loading more news:', error))
+                .finally(() => {
+                    isLoading = false;
+                    document.getElementById('loading').style.display = 'none';
+                });
+        }
+
+        function reloadFeed() {
+            currentPage = 1;
+            document.getElementById('news-feed').innerHTML = '';
+            loadMoreNews();
+        }
+
+        function createNewsCard(cluster) {
+            const card = document.createElement('a');
+            card.href = `/event/${cluster.id}`;
+            card.className = 'news-card';
+
+            const imageHtml = cluster.image_url ?
+                `<img src="${cluster.image_url}" alt="${cluster.title}" class="news-image" onerror="this.style.display='none'">` : '';
+
+            const trendingHtml = cluster.is_trending ?
+                '<div class="trending-badge">🔥 رائج</div>' : '';
+
+            let biasBarHtml = '';
+            let coverageTextHtml = '';
+
+            if (cluster.bias_distribution) {
+                const pro = cluster.bias_distribution.pro_saf.percentage;
+                const neutral = cluster.bias_distribution.neutral.percentage;
+                const oppose = cluster.bias_distribution.oppose_saf.percentage;
+
+                biasBarHtml = '<div class="bias-bar-compact">';
+                if (pro > 0) {
+                    biasBarHtml += `<div class="bias-segment-compact segment-pro" style="width: ${pro}%" title="مؤيد للقوات المسلحة: ${Math.round(pro)}%"></div>`;
+                }
+                if (neutral > 0) {
+                    biasBarHtml += `<div class="bias-segment-compact segment-neutral" style="width: ${neutral}%" title="محايد: ${Math.round(neutral)}%"></div>`;
+                }
+                if (oppose > 0) {
+                    biasBarHtml += `<div class="bias-segment-compact segment-oppose" style="width: ${oppose}%" title="معارض للقوات المسلحة: ${Math.round(oppose)}%"></div>`;
+                }
+                biasBarHtml += '</div>';
+
+                const biases = [
+                    { label: 'مؤيد', value: pro },
+                    { label: 'محايد', value: neutral },
+                    { label: 'معارض', value: oppose }
+                ];
+                biases.sort((a, b) => b.value - a.value);
+                const maxBias = biases[0];
+
+                coverageTextHtml = `
+                    <div style="font-size: 12px; color: #666; margin-top: 4px; margin-bottom: 8px;">
+                        ${Math.round(maxBias.value)}% تغطية ${maxBias.label}
+                    </div>
+                `;
+            }
+
+            card.innerHTML = `
+                ${imageHtml}
+                <div class="news-content">
+                    ${trendingHtml}
+                    <h3 class="news-title">${cluster.headline}</h3>
+                    ${biasBarHtml}
+                    ${coverageTextHtml}
+                    <div class="news-meta">
+                        <span>عدد المصادر: ${cluster.number_of_sources}</span>
+                        <span>${timeAgoArabic(cluster.first_date_of_publication)}</span>
+                    </div>
+                </div>
+            `;
+
+            return card;
+        }
+
+        function timeAgoArabic(dateString) {
+            if (!dateString) return '';
+            const date = new Date(dateString);
+            const now = new Date();
+            const seconds = Math.floor((now - date) / 1000);
+
+            let interval = seconds / 31536000;
+            if (interval > 1) return 'منذ ' + Math.floor(interval) + ' سنة';
+            interval = seconds / 2592000;
+            if (interval > 1) return 'منذ ' + Math.floor(interval) + ' شهر';
+            interval = seconds / 86400;
+            if (interval > 1) return 'منذ ' + Math.floor(interval) + ' يوم';
+            interval = seconds / 3600;
+            if (interval > 1) return 'منذ ' + Math.floor(interval) + ' ساعة';
+            interval = seconds / 60;
+            if (interval > 1) return 'منذ ' + Math.floor(interval) + ' دقيقة';
+            return 'منذ لحظات';
+        }
+
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+    </script>
+</body>
+
+</html>

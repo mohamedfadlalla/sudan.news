@@ -1,0 +1,542 @@
+2025-11-19 07:54:12,172 - __main__ - WARNING - File locking not available on this platform, skipping lock
+2025-11-19 07:54:12,173 - __main__ - INFO - Starting news aggregation
+2025-11-19 07:54:14,776 - aggregator - INFO - Successfully parsed 40 articles from https://sudanile.com/
+2025-11-19 08:02:02,280 - __main__ - WARNING - File locking not available on this platform, skipping lock
+2025-11-19 08:02:02,280 - __main__ - INFO - Starting news aggregation
+2025-11-19 08:02:05,127 - aggregator - INFO - Successfully parsed 40 articles from https://sudanile.com/
+2025-11-19 08:04:18,718 - __main__ - INFO - Processed 40 articles from https://sudanile.com/
+2025-11-19 08:04:20,244 - aggregator - INFO - Successfully parsed 13 articles from https://www.dabangasudan.org/ar
+2025-11-19 08:05:01,394 - __main__ - INFO - Processed 13 articles from https://www.dabangasudan.org/ar
+2025-11-19 08:05:03,069 - aggregator - INFO - Successfully parsed 12 articles from https://www.radiotamazuj.org/ar
+2025-11-19 08:05:40,749 - __main__ - INFO - Processed 12 articles from https://www.radiotamazuj.org/ar
+2025-11-19 08:05:42,048 - aggregator - INFO - Successfully parsed 24 articles from https://www.altaghyeer.info/ar
+2025-11-19 08:07:06,004 - __main__ - INFO - Processed 24 articles from https://www.altaghyeer.info/ar
+2025-11-19 08:07:07,264 - aggregator - ERROR - Error fetching data from https://suda.news/feed: 404 Client Error: Not Found for url: https://suda.news/feed
+2025-11-19 08:07:07,267 - __main__ - INFO - Processed 0 articles from https://suda.news
+2025-11-19 08:07:08,289 - aggregator - INFO - Successfully parsed 10 articles from https://tasamuhnews.com
+2025-11-19 08:07:43,872 - __main__ - INFO - Processed 10 articles from https://tasamuhnews.com
+2025-11-19 08:07:44,991 - aggregator - INFO - Successfully parsed 10 articles from https://www.sudaninet.net
+2025-11-19 08:08:22,925 - __main__ - INFO - Processed 10 articles from https://www.sudaninet.net
+2025-11-19 08:08:24,026 - aggregator - INFO - Successfully parsed 10 articles from https://www.alnilin.com
+2025-11-19 08:08:57,316 - __main__ - INFO - Processed 10 articles from https://www.alnilin.com
+2025-11-19 08:09:27,350 - aggregator - ERROR - Error fetching data from https://www.almashhad.news/feed: HTTPSConnectionPool(host='www.almashhad.news', port=443): Max retries exceeded with url: /feed (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001E16B227110>, 'Connection to www.almashhad.news timed out. (connect timeout=15)'))
+2025-11-19 08:09:27,350 - __main__ - INFO - Processed 0 articles from https://www.almashhad.news
+2025-11-19 08:09:28,330 - aggregator - INFO - Successfully parsed 10 articles from https://kushnews.net
+2025-11-19 08:10:01,455 - __main__ - INFO - Processed 10 articles from https://kushnews.net
+2025-11-19 08:10:03,401 - aggregator - INFO - Successfully parsed 30 articles from https://sudafax.com
+2025-11-19 08:11:46,510 - __main__ - INFO - Processed 30 articles from https://sudafax.com
+2025-11-19 08:11:48,261 - aggregator - INFO - Successfully parsed 15 articles from https://www.tagpress.net
+2025-11-19 08:12:47,236 - __main__ - INFO - Processed 15 articles from https://www.tagpress.net
+2025-11-19 08:12:48,157 - aggregator - INFO - Successfully parsed 20 articles from https://arabic.cnn.com
+2025-11-19 08:12:48,175 - __main__ - INFO - Processed 0 articles from https://arabic.cnn.com
+2025-11-19 08:12:49,473 - aggregator - INFO - Successfully parsed 10 articles from https://sudantribune.net
+2025-11-19 08:13:37,150 - __main__ - INFO - Processed 10 articles from https://sudantribune.net
+2025-11-19 08:13:38,114 - aggregator - INFO - Successfully parsed 10 articles from https://www.darfur24.com
+2025-11-19 08:14:14,753 - __main__ - INFO - Processed 10 articles from https://www.darfur24.com
+2025-11-19 08:14:16,885 - aggregator - INFO - Successfully parsed 10 articles from https://www.sudani.news
+2025-11-19 08:14:54,484 - __main__ - INFO - Processed 10 articles from https://www.sudani.news
+2025-11-19 08:14:55,629 - aggregator - INFO - Successfully parsed 10 articles from https://www.alsahafa.net
+2025-11-19 08:15:32,912 - __main__ - INFO - Processed 10 articles from https://www.alsahafa.net
+2025-11-19 08:15:34,475 - aggregator - INFO - Successfully parsed 25 articles from https://www.aljazeera.net
+2025-11-19 08:15:40,355 - __main__ - INFO - Processed 2 articles from https://www.aljazeera.net
+2025-11-19 08:15:41,679 - aggregator - ERROR - Error fetching data from https://www.skynewsarabia.com/rss: 403 Client Error: Forbidden for url: https://www.skynewsarabia.com/rss
+2025-11-19 08:15:41,683 - __main__ - INFO - Processed 0 articles from https://www.skynewsarabia.com
+2025-11-19 08:15:42,634 - aggregator - INFO - Successfully parsed 21 articles from https://www.france24.com
+2025-11-19 08:15:47,133 - __main__ - INFO - Processed 1 articles from https://www.france24.com
+2025-11-19 08:15:48,237 - aggregator - INFO - Successfully parsed 50 articles from https://arabic.euronews.com
+2025-11-19 08:15:59,911 - __main__ - INFO - Processed 4 articles from https://arabic.euronews.com
+2025-11-19 08:16:01,312 - aggregator - ERROR - Error parsing XML from https://feeds.feedburner.com/alalamfeed: no element found: line 34, column 237
+2025-11-19 08:16:01,315 - __main__ - INFO - Processed 0 articles from https://alalam.ir
+2025-11-19 08:16:02,747 - aggregator - INFO - Successfully parsed 100 articles from https://arabic.rt.com
+2025-11-19 08:16:27,971 - __main__ - INFO - Processed 8 articles from https://arabic.rt.com
+2025-11-19 08:16:29,032 - aggregator - ERROR - An unexpected error occurred with https://www.alsumaria.tv/Rss/News/ar/49/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA: Incoming markup is of an invalid type: None. Markup must be a string, a bytestring, or an open filehandle.
+2025-11-19 08:16:29,035 - __main__ - INFO - Processed 0 articles from https://www.alsumaria.tv
+2025-11-19 08:16:39,872 - aggregator - ERROR - An unexpected error occurred with https://alhiwar.tv/feed/: Incoming markup is of an invalid type: None. Markup must be a string, a bytestring, or an open filehandle.
+2025-11-19 08:16:39,876 - __main__ - INFO - Processed 0 articles from https://alhiwar.tv
+2025-11-19 08:16:40,937 - aggregator - ERROR - Error fetching data from https://www.almasryalyoum.com/feed: 403 Client Error: Forbidden for url: https://www.almasryalyoum.com/feed
+2025-11-19 08:16:40,939 - __main__ - INFO - Processed 0 articles from https://www.almasryalyoum.com
+2025-11-19 08:16:42,112 - aggregator - WARNING - Could not parse date '22:32 | 18-11-2025' from https://www.elkhabar.com
+2025-11-19 08:16:42,112 - aggregator - WARNING - Could not parse date '22:24 | 18-11-2025' from https://www.elkhabar.com
+2025-11-19 08:16:42,113 - aggregator - WARNING - Could not parse date '22:11 | 18-11-2025' from https://www.elkhabar.com
+2025-11-19 08:16:42,113 - aggregator - WARNING - Could not parse date '21:51 | 18-11-2025' from https://www.elkhabar.com
+2025-11-19 08:16:42,114 - aggregator - WARNING - Could not parse date '21:06 | 18-11-2025' from https://www.elkhabar.com
+2025-11-19 08:16:42,114 - aggregator - WARNING - Could not parse date '09:39 | 18-11-2025' from https://www.elkhabar.com
+2025-11-19 08:16:42,115 - aggregator - WARNING - Could not parse date '09:38 | 18-11-2025' from https://www.elkhabar.com
+2025-11-19 08:16:42,116 - aggregator - WARNING - Could not parse date '09:37 | 18-11-2025' from https://www.elkhabar.com
+2025-11-19 08:16:42,116 - aggregator - WARNING - Could not parse date '09:36 | 18-11-2025' from https://www.elkhabar.com
+2025-11-19 08:16:42,117 - aggregator - WARNING - Could not parse date '10:32 | 17-11-2025' from https://www.elkhabar.com
+2025-11-19 08:16:42,118 - aggregator - WARNING - Could not parse date '10:36 | 16-11-2025' from https://www.elkhabar.com
+2025-11-19 08:16:42,119 - aggregator - WARNING - Could not parse date '13:54 | 11-11-2025' from https://www.elkhabar.com
+2025-11-19 08:16:42,120 - aggregator - WARNING - Could not parse date '22:02 | 31-10-2025' from https://www.elkhabar.com
+2025-11-19 08:16:42,120 - aggregator - WARNING - Could not parse date '20:15 | 25-10-2025' from https://www.elkhabar.com
+2025-11-19 08:16:42,121 - aggregator - WARNING - Could not parse date '11:22 | 22-10-2025' from https://www.elkhabar.com
+2025-11-19 08:16:42,121 - aggregator - INFO - Successfully parsed 15 articles from https://www.elkhabar.com
+2025-11-19 08:16:45,180 - __main__ - INFO - Processed 1 articles from https://www.elkhabar.com
+2025-11-19 08:16:45,190 - __main__ - INFO - Aggregation complete: 230 articles processed
+2025-11-20 09:56:55,260 - __main__ - INFO - Starting full pipeline run
+2025-11-20 09:56:55,261 - __main__ - WARNING - File locking not available on this platform, skipping lock
+2025-11-20 09:56:55,261 - __main__ - INFO - Starting news aggregation
+2025-11-20 09:57:01,106 - aggregator - INFO - Successfully parsed 40 articles from https://sudanile.com/
+2025-11-20 09:59:19,472 - __main__ - INFO - Processed 40 articles from https://sudanile.com/
+2025-11-20 09:59:20,980 - aggregator - INFO - Successfully parsed 13 articles from https://www.dabangasudan.org/ar
+2025-11-20 10:00:02,432 - __main__ - INFO - Processed 13 articles from https://www.dabangasudan.org/ar
+2025-11-20 10:00:04,268 - aggregator - INFO - Successfully parsed 12 articles from https://www.radiotamazuj.org/ar
+2025-11-20 10:00:41,731 - __main__ - INFO - Processed 12 articles from https://www.radiotamazuj.org/ar
+2025-11-20 10:00:42,843 - aggregator - INFO - Successfully parsed 24 articles from https://www.altaghyeer.info/ar
+2025-11-20 10:02:05,926 - __main__ - INFO - Processed 24 articles from https://www.altaghyeer.info/ar
+2025-11-20 10:02:07,345 - aggregator - ERROR - Error fetching data from https://suda.news/feed: 404 Client Error: Not Found for url: https://suda.news/feed
+2025-11-20 10:02:07,348 - __main__ - INFO - Processed 0 articles from https://suda.news
+2025-11-20 10:02:08,516 - aggregator - INFO - Successfully parsed 10 articles from https://tasamuhnews.com
+2025-11-20 10:02:42,912 - __main__ - INFO - Processed 10 articles from https://tasamuhnews.com
+2025-11-20 10:02:44,246 - aggregator - INFO - Successfully parsed 10 articles from https://www.sudaninet.net
+2025-11-20 10:03:22,507 - __main__ - INFO - Processed 10 articles from https://www.sudaninet.net
+2025-11-20 10:03:23,647 - aggregator - INFO - Successfully parsed 10 articles from https://www.alnilin.com
+2025-11-20 10:03:57,872 - __main__ - INFO - Processed 10 articles from https://www.alnilin.com
+2025-11-20 10:04:27,923 - aggregator - ERROR - Error fetching data from https://www.almashhad.news/feed: HTTPSConnectionPool(host='www.almashhad.news', port=443): Max retries exceeded with url: /feed (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000022E2D77EE90>, 'Connection to www.almashhad.news timed out. (connect timeout=15)'))
+2025-11-20 10:04:27,923 - __main__ - INFO - Processed 0 articles from https://www.almashhad.news
+2025-11-20 10:04:28,934 - aggregator - INFO - Successfully parsed 10 articles from https://kushnews.net
+2025-11-20 10:05:03,230 - __main__ - INFO - Processed 10 articles from https://kushnews.net
+2025-11-20 10:05:04,250 - aggregator - INFO - Successfully parsed 30 articles from https://sudafax.com
+2025-11-20 10:06:44,034 - __main__ - INFO - Processed 30 articles from https://sudafax.com
+2025-11-20 10:06:45,973 - aggregator - INFO - Successfully parsed 15 articles from https://www.tagpress.net
+2025-11-20 10:07:43,882 - __main__ - INFO - Processed 15 articles from https://www.tagpress.net
+2025-11-20 10:07:44,899 - aggregator - INFO - Successfully parsed 20 articles from https://arabic.cnn.com
+2025-11-20 10:08:08,518 - __main__ - INFO - Processed 7 articles from https://arabic.cnn.com
+2025-11-20 10:08:09,905 - aggregator - INFO - Successfully parsed 10 articles from https://sudantribune.net
+2025-11-20 10:08:56,919 - __main__ - INFO - Processed 10 articles from https://sudantribune.net
+2025-11-20 10:08:57,926 - aggregator - INFO - Successfully parsed 10 articles from https://www.darfur24.com
+2025-11-20 10:09:37,603 - __main__ - INFO - Processed 10 articles from https://www.darfur24.com
+2025-11-20 10:09:39,316 - aggregator - INFO - Successfully parsed 10 articles from https://www.sudani.news
+2025-11-20 10:10:15,109 - __main__ - INFO - Processed 10 articles from https://www.sudani.news
+2025-11-20 10:10:16,275 - aggregator - INFO - Successfully parsed 10 articles from https://www.alsahafa.net
+2025-11-20 10:10:53,468 - __main__ - INFO - Processed 10 articles from https://www.alsahafa.net
+2025-11-20 10:10:54,606 - aggregator - INFO - Successfully parsed 25 articles from https://www.aljazeera.net
+2025-11-20 10:11:11,231 - __main__ - INFO - Processed 5 articles from https://www.aljazeera.net
+2025-11-20 10:11:12,368 - aggregator - INFO - Successfully parsed 84 articles from https://www.skynewsarabia.com
+2025-11-20 10:11:31,452 - __main__ - INFO - Processed 6 articles from https://www.skynewsarabia.com
+2025-11-20 10:11:32,379 - aggregator - ERROR - An unexpected error occurred with https://www.france24.com/ar/rss: Incoming markup is of an invalid type: None. Markup must be a string, a bytestring, or an open filehandle.
+2025-11-20 10:11:32,382 - __main__ - INFO - Processed 0 articles from https://www.france24.com
+2025-11-20 10:11:33,300 - aggregator - ERROR - Error parsing XML from https://arabic.euronews.com/rss: not well-formed (invalid token): line 1, column 0
+2025-11-20 10:11:33,303 - __main__ - INFO - Processed 0 articles from https://arabic.euronews.com
+2025-11-20 10:11:34,286 - aggregator - INFO - Successfully parsed 30 articles from https://alalam.ir
+2025-11-20 10:11:51,389 - __main__ - INFO - Processed 6 articles from https://alalam.ir
+2025-11-20 10:11:53,227 - aggregator - INFO - Successfully parsed 100 articles from https://arabic.rt.com
+2025-11-20 10:12:05,778 - __main__ - INFO - Processed 4 articles from https://arabic.rt.com
+2025-11-20 10:12:06,794 - aggregator - ERROR - An unexpected error occurred with https://www.alsumaria.tv/Rss/News/ar/49/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA: Incoming markup is of an invalid type: None. Markup must be a string, a bytestring, or an open filehandle.
+2025-11-20 10:12:06,798 - __main__ - INFO - Processed 0 articles from https://www.alsumaria.tv
+2025-11-20 10:12:12,679 - aggregator - ERROR - An unexpected error occurred with https://alhiwar.tv/feed/: Incoming markup is of an invalid type: None. Markup must be a string, a bytestring, or an open filehandle.
+2025-11-20 10:12:12,682 - __main__ - INFO - Processed 0 articles from https://alhiwar.tv
+2025-11-20 10:12:13,537 - aggregator - ERROR - Error fetching data from https://www.almasryalyoum.com/feed: 403 Client Error: Forbidden for url: https://www.almasryalyoum.com/feed
+2025-11-20 10:12:13,539 - __main__ - INFO - Processed 0 articles from https://www.almasryalyoum.com
+2025-11-20 10:12:14,579 - aggregator - WARNING - Could not parse date '23:19 | 19-11-2025' from https://www.elkhabar.com
+2025-11-20 10:12:14,581 - aggregator - WARNING - Could not parse date '22:35 | 19-11-2025' from https://www.elkhabar.com
+2025-11-20 10:12:14,583 - aggregator - WARNING - Could not parse date '22:33 | 19-11-2025' from https://www.elkhabar.com
+2025-11-20 10:12:14,584 - aggregator - WARNING - Could not parse date '22:28 | 19-11-2025' from https://www.elkhabar.com
+2025-11-20 10:12:14,585 - aggregator - WARNING - Could not parse date '21:46 | 19-11-2025' from https://www.elkhabar.com
+2025-11-20 10:12:14,586 - aggregator - WARNING - Could not parse date '11:33 | 19-11-2025' from https://www.elkhabar.com
+2025-11-20 10:12:14,587 - aggregator - WARNING - Could not parse date '11:31 | 19-11-2025' from https://www.elkhabar.com
+2025-11-20 10:12:14,589 - aggregator - WARNING - Could not parse date '09:39 | 18-11-2025' from https://www.elkhabar.com
+2025-11-20 10:12:14,590 - aggregator - WARNING - Could not parse date '09:38 | 18-11-2025' from https://www.elkhabar.com
+2025-11-20 10:12:14,591 - aggregator - WARNING - Could not parse date '09:37 | 18-11-2025' from https://www.elkhabar.com
+2025-11-20 10:12:14,592 - aggregator - WARNING - Could not parse date '10:36 | 16-11-2025' from https://www.elkhabar.com
+2025-11-20 10:12:14,593 - aggregator - WARNING - Could not parse date '13:54 | 11-11-2025' from https://www.elkhabar.com
+2025-11-20 10:12:14,594 - aggregator - WARNING - Could not parse date '22:02 | 31-10-2025' from https://www.elkhabar.com
+2025-11-20 10:12:14,598 - aggregator - WARNING - Could not parse date '20:15 | 25-10-2025' from https://www.elkhabar.com
+2025-11-20 10:12:14,599 - aggregator - WARNING - Could not parse date '11:22 | 22-10-2025' from https://www.elkhabar.com
+2025-11-20 10:12:14,600 - aggregator - INFO - Successfully parsed 15 articles from https://www.elkhabar.com
+2025-11-20 10:12:14,610 - __main__ - INFO - Processed 0 articles from https://www.elkhabar.com
+2025-11-20 10:12:14,620 - __main__ - INFO - Aggregation complete: 242 articles processed
+2025-11-20 10:12:14,621 - __main__ - INFO - Starting event clustering
+2025-11-20 10:12:14,636 - __main__ - INFO - Processing 242 unclustered articles
+2025-11-20 10:12:14,667 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-20 10:12:14,667 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: google/embeddinggemma-300m
+2025-11-20 10:12:23,282 - sentence_transformers.SentenceTransformer - INFO - 14 prompts are loaded, with the keys: ['query', 'document', 'BitextMining', 'Clustering', 'Classification', 'InstructionRetrieval', 'MultilabelClassification', 'PairClassification', 'Reranking', 'Retrieval', 'Retrieval-query', 'Retrieval-document', 'STS', 'Summarization']
+2025-11-20 10:14:56,412 - __main__ - INFO - Clustering complete: 167 clusters created
+2025-11-20 10:14:56,414 - __main__ - INFO - Updating trending topics...
+2025-11-20 10:14:56,576 - __main__ - INFO - Trending updates complete. Checked 112 clusters.
+2025-11-20 10:14:56,577 - __main__ - INFO - Full pipeline run completed successfully
+2025-11-20 17:06:52,082 - __main__ - INFO - Starting full pipeline run
+2025-11-20 17:06:52,083 - __main__ - WARNING - File locking not available on this platform, skipping lock
+2025-11-20 17:06:52,084 - __main__ - INFO - Starting news aggregation
+2025-11-20 17:06:55,051 - aggregator - INFO - Successfully parsed 40 articles from https://sudanile.com/
+2025-11-20 17:09:09,612 - __main__ - INFO - Processed 40 articles from https://sudanile.com/
+2025-11-20 17:09:11,016 - aggregator - INFO - Successfully parsed 13 articles from https://www.dabangasudan.org/ar
+2025-11-20 17:09:52,504 - __main__ - INFO - Processed 13 articles from https://www.dabangasudan.org/ar
+2025-11-20 17:09:54,191 - aggregator - INFO - Successfully parsed 12 articles from https://www.radiotamazuj.org/ar
+2025-11-20 17:10:31,857 - __main__ - INFO - Processed 12 articles from https://www.radiotamazuj.org/ar
+2025-11-20 17:10:33,502 - aggregator - INFO - Successfully parsed 24 articles from https://www.altaghyeer.info/ar
+2025-11-20 17:11:55,039 - __main__ - INFO - Processed 24 articles from https://www.altaghyeer.info/ar
+2025-11-20 17:11:56,279 - aggregator - ERROR - Error fetching data from https://suda.news/feed: 404 Client Error: Not Found for url: https://suda.news/feed
+2025-11-20 17:11:56,283 - __main__ - INFO - Processed 0 articles from https://suda.news
+2025-11-20 17:11:57,266 - aggregator - INFO - Successfully parsed 10 articles from https://tasamuhnews.com
+2025-11-20 17:12:34,042 - __main__ - INFO - Processed 10 articles from https://tasamuhnews.com
+2025-11-20 17:12:35,415 - aggregator - INFO - Successfully parsed 10 articles from https://www.sudaninet.net
+2025-11-20 17:13:09,933 - __main__ - INFO - Processed 10 articles from https://www.sudaninet.net
+2025-11-20 17:13:11,267 - aggregator - INFO - Successfully parsed 10 articles from https://www.alnilin.com
+2025-11-20 17:13:48,224 - __main__ - INFO - Processed 10 articles from https://www.alnilin.com
+2025-11-20 17:14:18,340 - aggregator - ERROR - Error fetching data from https://www.almashhad.news/feed: HTTPSConnectionPool(host='www.almashhad.news', port=443): Max retries exceeded with url: /feed (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000215E45325D0>, 'Connection to www.almashhad.news timed out. (connect timeout=15)'))
+2025-11-20 17:14:18,470 - __main__ - INFO - Processed 0 articles from https://www.almashhad.news
+2025-11-20 17:14:21,830 - aggregator - INFO - Successfully parsed 10 articles from https://kushnews.net
+2025-11-20 17:14:59,620 - __main__ - INFO - Processed 10 articles from https://kushnews.net
+2025-11-20 17:15:03,051 - aggregator - INFO - Successfully parsed 30 articles from https://sudafax.com
+2025-11-20 17:16:51,855 - __main__ - INFO - Processed 30 articles from https://sudafax.com
+2025-11-20 17:16:53,892 - aggregator - INFO - Successfully parsed 15 articles from https://www.tagpress.net
+2025-11-20 17:17:53,770 - __main__ - INFO - Processed 15 articles from https://www.tagpress.net
+2025-11-20 17:17:54,827 - aggregator - INFO - Successfully parsed 20 articles from https://arabic.cnn.com
+2025-11-20 17:17:58,675 - __main__ - INFO - Processed 1 articles from https://arabic.cnn.com
+2025-11-20 17:18:00,233 - aggregator - INFO - Successfully parsed 10 articles from https://sudantribune.net
+2025-11-20 17:18:47,809 - __main__ - INFO - Processed 10 articles from https://sudantribune.net
+2025-11-20 17:18:48,621 - aggregator - INFO - Successfully parsed 10 articles from https://www.darfur24.com
+2025-11-20 17:19:28,734 - __main__ - INFO - Processed 10 articles from https://www.darfur24.com
+2025-11-20 17:19:30,966 - aggregator - INFO - Successfully parsed 10 articles from https://www.sudani.news
+2025-11-20 17:20:07,163 - __main__ - INFO - Processed 10 articles from https://www.sudani.news
+2025-11-20 17:20:08,936 - aggregator - INFO - Successfully parsed 10 articles from https://www.alsahafa.net
+2025-11-20 17:20:46,444 - __main__ - INFO - Processed 10 articles from https://www.alsahafa.net
+2025-11-20 17:20:47,372 - aggregator - INFO - Successfully parsed 25 articles from https://www.aljazeera.net
+2025-11-20 17:20:50,818 - __main__ - INFO - Processed 1 articles from https://www.aljazeera.net
+2025-11-20 17:20:53,237 - aggregator - ERROR - Error parsing XML from https://www.skynewsarabia.com/rss: not well-formed (invalid token): line 25, column 2398
+2025-11-20 17:20:53,243 - __main__ - INFO - Processed 0 articles from https://www.skynewsarabia.com
+2025-11-20 17:20:54,222 - aggregator - INFO - Successfully parsed 22 articles from https://www.france24.com
+2025-11-20 17:21:24,691 - __main__ - INFO - Processed 8 articles from https://www.france24.com
+2025-11-20 17:21:25,582 - aggregator - INFO - Successfully parsed 50 articles from https://arabic.euronews.com
+2025-11-20 17:21:47,545 - __main__ - INFO - Processed 7 articles from https://arabic.euronews.com
+2025-11-20 17:21:48,818 - aggregator - ERROR - Error parsing XML from https://feeds.feedburner.com/alalamfeed: no element found: line 34, column 237
+2025-11-20 17:21:48,822 - __main__ - INFO - Processed 0 articles from https://alalam.ir
+2025-11-20 17:21:50,421 - aggregator - INFO - Successfully parsed 100 articles from https://arabic.rt.com
+2025-11-20 17:22:08,140 - __main__ - INFO - Processed 5 articles from https://arabic.rt.com
+2025-11-20 17:22:26,784 - aggregator - ERROR - Error fetching data from https://www.alsumaria.tv/Rss/News/ar/49/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA: HTTPSConnectionPool(host='www.alsumaria.tv', port=443): Read timed out. (read timeout=15)
+2025-11-20 17:22:26,785 - __main__ - INFO - Processed 0 articles from https://www.alsumaria.tv
+2025-11-20 17:22:26,792 - aggregator - ERROR - Error fetching data from https://alhiwar.tv/feed/: HTTPSConnectionPool(host='alhiwar.tv', port=443): Max retries exceeded with url: /feed/ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447DE50>: Failed to resolve 'alhiwar.tv' ([Errno 11001] getaddrinfo failed)"))
+2025-11-20 17:22:26,793 - __main__ - INFO - Processed 0 articles from https://alhiwar.tv
+2025-11-20 17:22:26,816 - aggregator - ERROR - Error fetching data from https://www.almasryalyoum.com/feed: HTTPSConnectionPool(host='www.almasryalyoum.com', port=443): Max retries exceeded with url: /feed (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4445310>: Failed to resolve 'www.almasryalyoum.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-20 17:22:26,821 - __main__ - INFO - Processed 0 articles from https://www.almasryalyoum.com
+2025-11-20 17:22:26,831 - aggregator - ERROR - Error fetching data from https://www.elkhabar.com/feed: HTTPSConnectionPool(host='www.elkhabar.com', port=443): Max retries exceeded with url: /feed (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4444910>: Failed to resolve 'www.elkhabar.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-20 17:22:26,833 - __main__ - INFO - Processed 0 articles from https://www.elkhabar.com
+2025-11-20 17:22:26,848 - __main__ - INFO - Aggregation complete: 236 articles processed
+2025-11-20 17:22:26,849 - __main__ - INFO - Starting event clustering
+2025-11-20 17:22:26,882 - __main__ - INFO - Processing 236 unclustered articles
+2025-11-20 17:22:26,927 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-20 17:22:26,927 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: google/embeddinggemma-300m
+2025-11-20 17:22:26,938 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/modules.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4141BE0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: e3519b17-5e6f-4c57-9aea-07a1eef21ff3)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./modules.json
+2025-11-20 17:22:26,939 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-11-20 17:22:27,944 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/modules.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4447B10>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 117ff2a9-a7ec-4b07-9b1b-2b182fc527b2)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./modules.json
+2025-11-20 17:22:27,948 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-11-20 17:22:29,952 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/modules.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4445310>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 8d4d7057-c92b-47e7-89c4-92e85d294fe7)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./modules.json
+2025-11-20 17:22:29,955 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-11-20 17:22:33,960 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/modules.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E44474D0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 3c53d680-0f53-4134-a859-561ef9e2fcee)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./modules.json
+2025-11-20 17:22:33,963 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-11-20 17:22:41,967 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/modules.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E414D6D0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 4212654e-c08d-4a4b-8b44-b94c4318c86e)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./modules.json
+2025-11-20 17:22:41,971 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-11-20 17:22:49,975 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/modules.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E44479D0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 51ba4137-3a20-45c0-95af-741aa8b6d9be)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./modules.json
+2025-11-20 17:22:49,981 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/config_sentence_transformers.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4444CD0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 4a990535-0eaf-4ddf-801f-eb639300810a)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./config_sentence_transformers.json
+2025-11-20 17:22:49,982 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-11-20 17:22:50,986 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/config_sentence_transformers.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4446FD0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 44624c16-15e4-412a-a281-788584a24b7a)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./config_sentence_transformers.json
+2025-11-20 17:22:50,989 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-11-20 17:22:52,993 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/config_sentence_transformers.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4447750>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 56ea1782-49b6-44d8-997c-db5d31ff5e58)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./config_sentence_transformers.json
+2025-11-20 17:22:52,996 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-11-20 17:22:57,000 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/config_sentence_transformers.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4447ED0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: e2147c42-4a3f-42b7-83d0-23f51eddc2d2)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./config_sentence_transformers.json
+2025-11-20 17:22:57,003 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-11-20 17:23:05,008 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/config_sentence_transformers.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4445590>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: ec9a9ec0-bf5a-4f13-a34a-91fec67d6a22)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./config_sentence_transformers.json
+2025-11-20 17:23:05,010 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-11-20 17:23:13,014 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/config_sentence_transformers.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4445A90>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 75d35a40-8fa6-49c7-b7f6-fd161ba6cd60)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./config_sentence_transformers.json
+2025-11-20 17:23:13,022 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/config_sentence_transformers.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E44447D0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 6c451a17-6a8e-48bf-8ce0-acffd9a4bc54)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./config_sentence_transformers.json
+2025-11-20 17:23:13,023 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-11-20 17:23:14,027 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/config_sentence_transformers.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4447890>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 08c96acc-9e51-4ef3-a82a-530e5181688f)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./config_sentence_transformers.json
+2025-11-20 17:23:14,030 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-11-20 17:23:16,034 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/config_sentence_transformers.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447F750>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 4020f87e-e0ac-4099-81b2-e4fc8f98bc06)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./config_sentence_transformers.json
+2025-11-20 17:23:16,037 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-11-20 17:23:20,041 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/config_sentence_transformers.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447CE10>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: ea48688f-0438-4cc2-8696-45eb6af7d77e)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./config_sentence_transformers.json
+2025-11-20 17:23:20,044 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-11-20 17:23:28,048 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/config_sentence_transformers.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447C910>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: cdb80b55-4117-4213-ae59-3e0898592b5b)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./config_sentence_transformers.json
+2025-11-20 17:23:28,051 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-11-20 17:23:36,055 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/config_sentence_transformers.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447C550>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 8cb99913-bfea-4ff5-a3c2-042ae1b8bfd7)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./config_sentence_transformers.json
+2025-11-20 17:23:36,061 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/README.md (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447D310>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 495af36b-9c4b-4f96-9b14-5847c2b18591)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./README.md
+2025-11-20 17:23:36,063 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-11-20 17:23:37,066 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/README.md (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447D6D0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 84215fb6-f4b5-437a-a1b1-c8e3c9d671fa)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./README.md
+2025-11-20 17:23:37,069 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-11-20 17:23:39,073 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/README.md (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447DA90>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: aaa56287-4848-418f-9d2c-bed116f677f1)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./README.md
+2025-11-20 17:23:39,076 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-11-20 17:23:43,080 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/README.md (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447DF90>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 0f4e5536-d80b-48de-85d5-7b8c34cf45ba)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./README.md
+2025-11-20 17:23:43,082 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-11-20 17:23:51,087 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/README.md (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447E710>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: c5cebcbd-b12d-4db7-9e07-eef689359e10)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./README.md
+2025-11-20 17:23:51,089 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-11-20 17:23:59,094 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/README.md (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447E850>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 28d55c7b-02a7-4406-aa74-e746d68cdf7d)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./README.md
+2025-11-20 17:23:59,101 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/modules.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447ED50>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 58e5f6bf-cff4-483b-a903-a2fe152a9c5d)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./modules.json
+2025-11-20 17:23:59,102 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-11-20 17:24:00,106 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/modules.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447F110>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: b5f21623-98d4-489e-a7ae-a58f8648d9a4)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./modules.json
+2025-11-20 17:24:00,109 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-11-20 17:24:02,113 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/modules.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447F4D0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: ae481e0c-1937-4583-ba01-61f6785e6d7c)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./modules.json
+2025-11-20 17:24:02,115 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-11-20 17:24:06,118 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/modules.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447F9D0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: ce9eea3b-369f-487d-986b-2a281875f4b5)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./modules.json
+2025-11-20 17:24:06,121 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-11-20 17:24:14,126 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/modules.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447FB10>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 38cc4600-e09d-4acf-b9a5-9cf5d6198d63)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./modules.json
+2025-11-20 17:24:14,130 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-11-20 17:24:22,135 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/modules.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447FB10>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 9c517b5a-e202-4a97-8258-7c8876010f39)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./modules.json
+2025-11-20 17:24:22,142 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/sentence_bert_config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447FC50>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 7bb66ae9-29a7-469b-bbe3-c66d7a6eb392)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./sentence_bert_config.json
+2025-11-20 17:24:22,144 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-11-20 17:24:23,148 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/sentence_bert_config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447F4D0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 3775d051-8b76-42ae-97dc-ef2a56e3bd05)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./sentence_bert_config.json
+2025-11-20 17:24:23,151 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-11-20 17:24:25,155 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/sentence_bert_config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447F110>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 53607ee9-46e8-45b7-ad43-db86d03f7805)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./sentence_bert_config.json
+2025-11-20 17:24:25,158 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-11-20 17:24:29,162 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/sentence_bert_config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447ED50>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 0504bb6c-8526-422a-bfdd-91c44750c3a7)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./sentence_bert_config.json
+2025-11-20 17:24:29,165 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-11-20 17:24:37,169 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/sentence_bert_config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447E850>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 533484f8-3ffa-4440-8b79-5079ab303290)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./sentence_bert_config.json
+2025-11-20 17:24:37,172 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-11-20 17:24:45,177 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/sentence_bert_config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447E710>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: d9b4b074-e799-408e-a886-06fb55e1f243)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/./sentence_bert_config.json
+2025-11-20 17:24:45,183 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/adapter_config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447DA90>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 244392a0-d8ad-4743-9b07-4695d4ac40b7)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/adapter_config.json
+2025-11-20 17:24:45,184 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-11-20 17:24:46,187 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/adapter_config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447D6D0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: facaf11c-7ecd-41d4-893d-aa9824caf582)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/adapter_config.json
+2025-11-20 17:24:46,190 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-11-20 17:24:48,195 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/adapter_config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447D310>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: a6cba8dd-5209-4af1-99d3-2641de4959ff)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/adapter_config.json
+2025-11-20 17:24:48,198 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-11-20 17:24:52,202 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/adapter_config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447C550>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 52aa9230-7c3a-4421-a1bf-7c501d7ca692)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/adapter_config.json
+2025-11-20 17:24:52,205 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-11-20 17:25:00,209 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/adapter_config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447C410>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: aebc56dd-1dcb-4e45-87c7-07a5237c9fc1)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/adapter_config.json
+2025-11-20 17:25:00,211 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-11-20 17:25:08,216 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/adapter_config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447C7D0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 2251a6de-2f58-444f-8a81-7f42edef8e04)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/adapter_config.json
+2025-11-20 17:25:08,223 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447CB90>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 9878cb97-7b6e-403a-904c-2cf1939ca957)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/config.json
+2025-11-20 17:25:08,224 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-11-20 17:25:09,227 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447E350>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 11b0b9d3-4ac6-447c-8659-7e6d73c3c11f)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/config.json
+2025-11-20 17:25:09,230 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-11-20 17:25:11,234 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E414D6D0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 15727258-61b4-4ab3-9ad3-1e545a90302e)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/config.json
+2025-11-20 17:25:11,237 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-11-20 17:25:15,241 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4446D50>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 09ef2950-f088-44ec-b2cd-d91de403042b)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/config.json
+2025-11-20 17:25:15,244 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-11-20 17:25:23,248 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4447610>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: b7acac71-ad7f-4480-af9e-010e0730d11d)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/config.json
+2025-11-20 17:25:23,251 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-11-20 17:25:31,255 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4445590>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 03a7aaf9-e42c-45fb-b894-8a4e5a6f243f)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/config.json
+2025-11-20 17:25:31,534 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/tokenizer_config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447D090>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 0175c9ea-8b14-4e92-9766-c1896110755e)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/tokenizer_config.json
+2025-11-20 17:25:31,536 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-11-20 17:25:32,541 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/tokenizer_config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447DF90>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 20128696-a80d-40aa-890a-467b89cc54d2)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/tokenizer_config.json
+2025-11-20 17:25:32,544 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-11-20 17:25:34,548 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/tokenizer_config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447E850>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: dc8a88f6-8528-4150-ad48-aba900e5fb9f)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/tokenizer_config.json
+2025-11-20 17:25:34,551 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-11-20 17:25:38,555 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/tokenizer_config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447ED50>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 22127aa6-489f-4f3b-8bd5-a05ed0beb222)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/tokenizer_config.json
+2025-11-20 17:25:38,558 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-11-20 17:25:46,562 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/tokenizer_config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447F110>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: c3c171e0-8557-4a9d-b3ad-6046ac4143e1)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/tokenizer_config.json
+2025-11-20 17:25:46,565 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-11-20 17:25:54,569 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/tokenizer_config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447F4D0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: af0fd179-0e1a-4eba-962c-e7566ee45ccf)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/tokenizer_config.json
+2025-11-20 17:25:57,676 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/1_Pooling/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4447ED0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 1e534d1b-89de-4be7-9beb-44938e2ef61a)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/1_Pooling/config.json
+2025-11-20 17:25:57,679 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-11-20 17:25:58,683 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/1_Pooling/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447F390>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 8e70e628-4906-4493-a9e5-fac6cc862792)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/1_Pooling/config.json
+2025-11-20 17:25:58,685 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-11-20 17:26:00,690 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/1_Pooling/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447F890>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: b7eb21a6-f9d5-498c-b23d-a1cd72a61613)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/1_Pooling/config.json
+2025-11-20 17:26:00,692 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-11-20 17:26:04,697 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/1_Pooling/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447EFD0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: eb01f5c5-c3b0-472d-838e-e8b30114273a)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/1_Pooling/config.json
+2025-11-20 17:26:04,700 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-11-20 17:26:12,704 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/1_Pooling/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447EC10>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 8f209f53-5341-4257-8d92-62277f6a7274)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/1_Pooling/config.json
+2025-11-20 17:26:12,707 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-11-20 17:26:20,711 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/1_Pooling/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447E990>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: fff5fc29-d41c-40fe-992b-4a9593a62d7f)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/1_Pooling/config.json
+2025-11-20 17:26:20,719 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/2_Dense/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E447F9D0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: b9039a5c-addd-4e25-bd24-635efb8827c1)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/2_Dense/config.json
+2025-11-20 17:26:20,721 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-11-20 17:26:21,724 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/2_Dense/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4532990>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: aaceba34-03e5-4f7b-bb12-d4672feda00b)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/2_Dense/config.json
+2025-11-20 17:26:21,727 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-11-20 17:26:23,731 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/2_Dense/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4530A50>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: a9825ec7-4bf2-46b6-bbb5-4906e5e9d81f)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/2_Dense/config.json
+2025-11-20 17:26:23,734 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-11-20 17:26:27,738 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/2_Dense/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4530910>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: b4309a2e-caab-49fd-8e54-d5f55b209b0f)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/2_Dense/config.json
+2025-11-20 17:26:27,741 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-11-20 17:26:35,745 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/2_Dense/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4530050>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: f97a3acd-84c4-4396-9aad-91f1fe262995)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/2_Dense/config.json
+2025-11-20 17:26:35,748 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-11-20 17:26:43,752 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/2_Dense/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4530550>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 284fb228-6b7e-4bcc-a1cb-8c0243ec7231)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/2_Dense/config.json
+2025-11-20 17:26:43,777 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/2_Dense/model.safetensors (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E45320D0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 834b092c-df0a-46ea-b26a-ab35db6bc689)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/2_Dense/model.safetensors
+2025-11-20 17:26:43,778 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-11-20 17:26:44,782 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/2_Dense/model.safetensors (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E45325D0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: b9384cee-bc2e-47ce-9f3c-5bee6cfa023d)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/2_Dense/model.safetensors
+2025-11-20 17:26:44,784 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-11-20 17:26:46,789 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/2_Dense/model.safetensors (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4532D50>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: da94ac6c-1b3d-4560-bd19-0ba27462eca0)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/2_Dense/model.safetensors
+2025-11-20 17:26:46,791 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-11-20 17:26:50,795 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/2_Dense/model.safetensors (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4533250>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: d1088169-0b21-4e51-923c-d1bcf48ea0d4)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/2_Dense/model.safetensors
+2025-11-20 17:26:50,798 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-11-20 17:26:58,803 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/2_Dense/model.safetensors (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E45339D0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: fbf15890-6239-4ce0-844e-ef8a466e95c8)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/2_Dense/model.safetensors
+2025-11-20 17:26:58,805 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-11-20 17:27:06,810 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/2_Dense/model.safetensors (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4533110>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 29fe8d88-d2e4-410f-8a47-3828ddc5ee8f)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/2_Dense/model.safetensors
+2025-11-20 17:27:06,825 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/3_Dense/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4531950>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 9f5a997a-6483-47be-ade4-f0bc0df2f6ef)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/3_Dense/config.json
+2025-11-20 17:27:06,829 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-11-20 17:27:07,833 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/3_Dense/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4531310>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: ef638d8b-d81c-430b-8687-a8adc11ee2fd)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/3_Dense/config.json
+2025-11-20 17:27:07,836 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-11-20 17:27:09,840 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/3_Dense/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4532E90>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 6d927fec-0350-4237-adb9-db18daf8958d)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/3_Dense/config.json
+2025-11-20 17:27:09,843 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-11-20 17:27:13,847 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/3_Dense/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4ED8190>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 8ca7f90b-d931-4ade-ad75-f0062893e699)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/3_Dense/config.json
+2025-11-20 17:27:13,850 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-11-20 17:27:21,855 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/3_Dense/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4ED8550>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 0ded70f7-3fac-46f1-8d9a-88d7dcfcbb85)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/3_Dense/config.json
+2025-11-20 17:27:21,858 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-11-20 17:27:29,862 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/3_Dense/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4ED8910>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: d3ef0139-87dd-4477-8ffb-20e84b929671)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/3_Dense/config.json
+2025-11-20 17:27:29,894 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/3_Dense/model.safetensors (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4ED8F50>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 702a6bbc-fae5-4fb5-8c92-905d24a2209e)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/3_Dense/model.safetensors
+2025-11-20 17:27:29,896 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-11-20 17:27:30,901 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/3_Dense/model.safetensors (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4532E90>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: a35475f6-b483-436d-a946-274a814a6d64)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/3_Dense/model.safetensors
+2025-11-20 17:27:30,904 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-11-20 17:27:32,908 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/3_Dense/model.safetensors (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4532FD0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 14ead644-b9fd-43c7-9e03-560622c82932)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/3_Dense/model.safetensors
+2025-11-20 17:27:32,910 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-11-20 17:27:36,915 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/3_Dense/model.safetensors (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4532710>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 2db93a66-ab88-483f-b13e-4807d45b78f8)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/3_Dense/model.safetensors
+2025-11-20 17:27:36,918 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-11-20 17:27:44,922 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/3_Dense/model.safetensors (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E45316D0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 3e5bb1b3-7c0b-45b9-a5ad-5ba0d5855d46)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/3_Dense/model.safetensors
+2025-11-20 17:27:44,926 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-11-20 17:27:52,930 - huggingface_hub.utils._http - WARNING - '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /google/embeddinggemma-300m/resolve/main/3_Dense/model.safetensors (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000215E4531A90>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 57de1348-f8ff-4172-98d1-5398ce56bb66)')' thrown while requesting HEAD https://huggingface.co/google/embeddinggemma-300m/resolve/main/3_Dense/model.safetensors
+2025-11-20 17:27:52,955 - sentence_transformers.SentenceTransformer - INFO - 14 prompts are loaded, with the keys: ['query', 'document', 'BitextMining', 'Clustering', 'Classification', 'InstructionRetrieval', 'MultilabelClassification', 'PairClassification', 'Reranking', 'Retrieval', 'Retrieval-query', 'Retrieval-document', 'STS', 'Summarization']
+2025-11-20 17:30:25,707 - __main__ - INFO - Clustering complete: 159 clusters created
+2025-11-20 17:30:25,709 - __main__ - INFO - Updating trending topics...
+2025-11-20 17:30:26,094 - __main__ - INFO - Trending updates complete. Checked 232 clusters.
+2025-11-20 17:30:26,096 - __main__ - INFO - Full pipeline run completed successfully
+2025-11-20 22:54:39,388 - __main__ - INFO - Starting full pipeline run
+2025-11-20 22:54:39,388 - __main__ - WARNING - File locking not available on this platform, skipping lock
+2025-11-20 22:54:39,388 - __main__ - INFO - Starting news aggregation
+2025-11-20 22:54:44,094 - aggregator - INFO - Successfully parsed 40 articles from https://sudanile.com/
+2025-11-20 22:56:58,579 - __main__ - INFO - Processed 40 articles from https://sudanile.com/
+2025-11-20 22:56:59,991 - aggregator - INFO - Successfully parsed 13 articles from https://www.dabangasudan.org/ar
+2025-11-20 22:57:40,537 - __main__ - INFO - Processed 13 articles from https://www.dabangasudan.org/ar
+2025-11-20 22:57:42,089 - aggregator - INFO - Successfully parsed 12 articles from https://www.radiotamazuj.org/ar
+2025-11-20 22:58:18,577 - __main__ - INFO - Processed 12 articles from https://www.radiotamazuj.org/ar
+2025-11-20 22:58:19,836 - aggregator - INFO - Successfully parsed 24 articles from https://www.altaghyeer.info/ar
+2025-11-20 22:59:41,324 - __main__ - INFO - Processed 24 articles from https://www.altaghyeer.info/ar
+2025-11-20 22:59:42,486 - aggregator - ERROR - Error fetching data from https://suda.news/feed: 404 Client Error: Not Found for url: https://suda.news/feed
+2025-11-20 22:59:42,488 - __main__ - INFO - Processed 0 articles from https://suda.news
+2025-11-20 22:59:43,709 - aggregator - INFO - Successfully parsed 10 articles from https://tasamuhnews.com
+2025-11-20 23:00:20,697 - __main__ - INFO - Processed 10 articles from https://tasamuhnews.com
+2025-11-20 23:00:21,603 - aggregator - INFO - Successfully parsed 10 articles from https://www.sudaninet.net
+2025-11-20 23:00:56,842 - __main__ - INFO - Processed 10 articles from https://www.sudaninet.net
+2025-11-20 23:00:59,380 - aggregator - INFO - Successfully parsed 10 articles from https://www.alnilin.com
+2025-11-20 23:01:32,495 - __main__ - INFO - Processed 10 articles from https://www.alnilin.com
+2025-11-20 23:02:02,592 - aggregator - ERROR - Error fetching data from https://www.almashhad.news/feed: HTTPSConnectionPool(host='www.almashhad.news', port=443): Max retries exceeded with url: /feed (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001C9C2F7E990>, 'Connection to www.almashhad.news timed out. (connect timeout=15)'))
+2025-11-20 23:02:02,593 - __main__ - INFO - Processed 0 articles from https://www.almashhad.news
+2025-11-20 23:02:03,644 - aggregator - INFO - Successfully parsed 10 articles from https://kushnews.net
+2025-11-20 23:02:39,632 - __main__ - INFO - Processed 10 articles from https://kushnews.net
+2025-11-20 23:02:40,917 - aggregator - INFO - Successfully parsed 30 articles from https://sudafax.com
+2025-11-20 23:04:25,775 - __main__ - INFO - Processed 30 articles from https://sudafax.com
+2025-11-20 23:04:28,503 - aggregator - INFO - Successfully parsed 15 articles from https://www.tagpress.net
+2025-11-20 23:05:28,215 - __main__ - INFO - Processed 15 articles from https://www.tagpress.net
+2025-11-20 23:05:29,029 - aggregator - INFO - Successfully parsed 20 articles from https://arabic.cnn.com
+2025-11-20 23:05:41,907 - __main__ - INFO - Processed 4 articles from https://arabic.cnn.com
+2025-11-20 23:05:43,084 - aggregator - INFO - Successfully parsed 10 articles from https://sudantribune.net
+2025-11-20 23:06:30,094 - __main__ - INFO - Processed 10 articles from https://sudantribune.net
+2025-11-20 23:06:30,916 - aggregator - INFO - Successfully parsed 10 articles from https://www.darfur24.com
+2025-11-20 23:07:10,693 - __main__ - INFO - Processed 10 articles from https://www.darfur24.com
+2025-11-20 23:07:12,198 - aggregator - INFO - Successfully parsed 10 articles from https://www.sudani.news
+2025-11-20 23:07:49,334 - __main__ - INFO - Processed 10 articles from https://www.sudani.news
+2025-11-20 23:07:50,501 - aggregator - INFO - Successfully parsed 10 articles from https://www.alsahafa.net
+2025-11-20 23:08:27,836 - __main__ - INFO - Processed 10 articles from https://www.alsahafa.net
+2025-11-20 23:08:28,783 - aggregator - INFO - Successfully parsed 25 articles from https://www.aljazeera.net
+2025-11-20 23:08:38,804 - __main__ - INFO - Processed 3 articles from https://www.aljazeera.net
+2025-11-20 23:08:39,843 - aggregator - ERROR - Error fetching data from https://www.skynewsarabia.com/rss: 403 Client Error: Forbidden for url: https://www.skynewsarabia.com/rss
+2025-11-20 23:08:39,845 - __main__ - INFO - Processed 0 articles from https://www.skynewsarabia.com
+2025-11-20 23:08:40,634 - aggregator - INFO - Successfully parsed 22 articles from https://www.france24.com
+2025-11-20 23:09:07,837 - __main__ - INFO - Processed 8 articles from https://www.france24.com
+2025-11-20 23:09:08,717 - aggregator - ERROR - Error parsing XML from https://arabic.euronews.com/rss: not well-formed (invalid token): line 1, column 0
+2025-11-20 23:09:08,719 - __main__ - INFO - Processed 0 articles from https://arabic.euronews.com
+2025-11-20 23:09:09,766 - aggregator - INFO - Successfully parsed 30 articles from https://alalam.ir
+2025-11-20 23:09:30,680 - __main__ - INFO - Processed 7 articles from https://alalam.ir
+2025-11-20 23:09:32,361 - aggregator - INFO - Successfully parsed 100 articles from https://arabic.rt.com
+2025-11-20 23:09:49,463 - __main__ - INFO - Processed 5 articles from https://arabic.rt.com
+2025-11-20 23:09:50,333 - aggregator - ERROR - An unexpected error occurred with https://www.alsumaria.tv/Rss/News/ar/49/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA: Incoming markup is of an invalid type: None. Markup must be a string, a bytestring, or an open filehandle.
+2025-11-20 23:09:50,335 - __main__ - INFO - Processed 0 articles from https://www.alsumaria.tv
+2025-11-20 23:09:55,634 - aggregator - ERROR - An unexpected error occurred with https://alhiwar.tv/feed/: Incoming markup is of an invalid type: None. Markup must be a string, a bytestring, or an open filehandle.
+2025-11-20 23:09:55,636 - __main__ - INFO - Processed 0 articles from https://alhiwar.tv
+2025-11-20 23:09:56,488 - aggregator - ERROR - Error fetching data from https://www.almasryalyoum.com/feed: 403 Client Error: Forbidden for url: https://www.almasryalyoum.com/feed
+2025-11-20 23:09:56,490 - __main__ - INFO - Processed 0 articles from https://www.almasryalyoum.com
+2025-11-20 23:09:57,419 - aggregator - WARNING - Could not parse date '21:51 | 20-11-2025' from https://www.elkhabar.com
+2025-11-20 23:09:57,420 - aggregator - WARNING - Could not parse date '21:27 | 20-11-2025' from https://www.elkhabar.com
+2025-11-20 23:09:57,422 - aggregator - WARNING - Could not parse date '21:13 | 20-11-2025' from https://www.elkhabar.com
+2025-11-20 23:09:57,423 - aggregator - WARNING - Could not parse date '21:02 | 20-11-2025' from https://www.elkhabar.com
+2025-11-20 23:09:57,425 - aggregator - WARNING - Could not parse date '20:59 | 20-11-2025' from https://www.elkhabar.com
+2025-11-20 23:09:57,426 - aggregator - WARNING - Could not parse date '11:33 | 19-11-2025' from https://www.elkhabar.com
+2025-11-20 23:09:57,426 - aggregator - WARNING - Could not parse date '11:31 | 19-11-2025' from https://www.elkhabar.com
+2025-11-20 23:09:57,427 - aggregator - WARNING - Could not parse date '09:39 | 18-11-2025' from https://www.elkhabar.com
+2025-11-20 23:09:57,428 - aggregator - WARNING - Could not parse date '09:38 | 18-11-2025' from https://www.elkhabar.com
+2025-11-20 23:09:57,429 - aggregator - WARNING - Could not parse date '09:37 | 18-11-2025' from https://www.elkhabar.com
+2025-11-20 23:09:57,430 - aggregator - WARNING - Could not parse date '10:36 | 16-11-2025' from https://www.elkhabar.com
+2025-11-20 23:09:57,431 - aggregator - WARNING - Could not parse date '13:54 | 11-11-2025' from https://www.elkhabar.com
+2025-11-20 23:09:57,432 - aggregator - WARNING - Could not parse date '22:02 | 31-10-2025' from https://www.elkhabar.com
+2025-11-20 23:09:57,433 - aggregator - WARNING - Could not parse date '20:15 | 25-10-2025' from https://www.elkhabar.com
+2025-11-20 23:09:57,434 - aggregator - WARNING - Could not parse date '11:22 | 22-10-2025' from https://www.elkhabar.com
+2025-11-20 23:09:57,434 - aggregator - INFO - Successfully parsed 15 articles from https://www.elkhabar.com
+2025-11-20 23:09:57,446 - __main__ - INFO - Processed 0 articles from https://www.elkhabar.com
+2025-11-20 23:09:57,456 - __main__ - INFO - Aggregation complete: 241 articles processed
+2025-11-20 23:09:57,457 - __main__ - INFO - Starting event clustering
+2025-11-20 23:09:57,477 - __main__ - INFO - Processing 241 unclustered articles
+2025-11-20 23:09:57,499 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-20 23:09:57,499 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: google/embeddinggemma-300m
+2025-11-20 23:10:06,971 - sentence_transformers.SentenceTransformer - INFO - 14 prompts are loaded, with the keys: ['query', 'document', 'BitextMining', 'Clustering', 'Classification', 'InstructionRetrieval', 'MultilabelClassification', 'PairClassification', 'Reranking', 'Retrieval', 'Retrieval-query', 'Retrieval-document', 'STS', 'Summarization']
+2025-11-20 23:12:14,377 - __main__ - INFO - Clustering complete: 161 clusters created
+2025-11-20 23:12:14,379 - __main__ - INFO - Updating trending topics...
+2025-11-20 23:12:14,804 - __main__ - INFO - Trending updates complete. Checked 357 clusters.
+2025-11-20 23:12:14,806 - __main__ - INFO - Full pipeline run completed successfully
+2025-11-20 23:15:13,476 - __main__ - INFO - Starting full pipeline run
+2025-11-20 23:15:13,477 - __main__ - WARNING - File locking not available on this platform, skipping lock
+2025-11-20 23:15:13,478 - __main__ - INFO - Starting news aggregation
+2025-11-20 23:15:17,376 - aggregator - INFO - Successfully parsed 40 articles from https://sudanile.com/
+2025-11-20 23:17:37,241 - __main__ - INFO - Processed 40 articles from https://sudanile.com/
+2025-11-20 23:17:38,640 - aggregator - INFO - Successfully parsed 13 articles from https://www.dabangasudan.org/ar
+2025-11-20 23:18:20,797 - __main__ - INFO - Processed 13 articles from https://www.dabangasudan.org/ar
+2025-11-20 23:18:22,290 - aggregator - INFO - Successfully parsed 12 articles from https://www.radiotamazuj.org/ar
+2025-11-20 23:18:59,167 - __main__ - INFO - Processed 12 articles from https://www.radiotamazuj.org/ar
+2025-11-20 23:19:00,145 - aggregator - INFO - Successfully parsed 24 articles from https://www.altaghyeer.info/ar
+2025-11-20 23:20:25,549 - __main__ - INFO - Processed 24 articles from https://www.altaghyeer.info/ar
+2025-11-20 23:20:26,705 - aggregator - ERROR - Error fetching data from https://suda.news/feed: 404 Client Error: Not Found for url: https://suda.news/feed
+2025-11-20 23:20:26,708 - __main__ - INFO - Processed 0 articles from https://suda.news
+2025-11-20 23:20:27,936 - aggregator - INFO - Successfully parsed 10 articles from https://tasamuhnews.com
+2025-11-20 23:21:04,036 - __main__ - INFO - Processed 10 articles from https://tasamuhnews.com
+2025-11-20 23:21:04,903 - aggregator - INFO - Successfully parsed 10 articles from https://www.sudaninet.net
+2025-11-20 23:21:40,504 - __main__ - INFO - Processed 10 articles from https://www.sudaninet.net
+2025-11-20 23:21:41,338 - aggregator - INFO - Successfully parsed 10 articles from https://www.alnilin.com
+2025-11-20 23:22:14,679 - __main__ - INFO - Processed 10 articles from https://www.alnilin.com
+2025-11-20 23:22:44,792 - aggregator - ERROR - Error fetching data from https://www.almashhad.news/feed: HTTPSConnectionPool(host='www.almashhad.news', port=443): Max retries exceeded with url: /feed (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001DC88252990>, 'Connection to www.almashhad.news timed out. (connect timeout=15)'))
+2025-11-20 23:22:44,792 - __main__ - INFO - Processed 0 articles from https://www.almashhad.news
+2025-11-20 23:22:45,682 - aggregator - INFO - Successfully parsed 10 articles from https://kushnews.net
+2025-11-20 23:23:22,104 - __main__ - INFO - Processed 10 articles from https://kushnews.net
+2025-11-20 23:23:23,411 - aggregator - INFO - Successfully parsed 30 articles from https://sudafax.com
+2025-11-20 23:25:10,684 - __main__ - INFO - Processed 30 articles from https://sudafax.com
+2025-11-20 23:25:12,686 - aggregator - INFO - Successfully parsed 15 articles from https://www.tagpress.net
+2025-11-20 23:26:12,759 - __main__ - INFO - Processed 15 articles from https://www.tagpress.net
+2025-11-20 23:26:13,587 - aggregator - INFO - Successfully parsed 20 articles from https://arabic.cnn.com
+2025-11-20 23:26:26,087 - __main__ - INFO - Processed 4 articles from https://arabic.cnn.com
+2025-11-20 23:26:27,246 - aggregator - INFO - Successfully parsed 10 articles from https://sudantribune.net
+2025-11-20 23:27:13,645 - __main__ - INFO - Processed 10 articles from https://sudantribune.net
+2025-11-20 23:27:14,584 - aggregator - INFO - Successfully parsed 10 articles from https://www.darfur24.com
+2025-11-20 23:27:54,837 - __main__ - INFO - Processed 10 articles from https://www.darfur24.com
+2025-11-20 23:27:56,066 - aggregator - INFO - Successfully parsed 10 articles from https://www.sudani.news
+2025-11-20 23:28:32,595 - __main__ - INFO - Processed 10 articles from https://www.sudani.news
+2025-11-20 23:28:33,605 - aggregator - INFO - Successfully parsed 10 articles from https://www.alsahafa.net
+2025-11-20 23:29:11,787 - __main__ - INFO - Processed 10 articles from https://www.alsahafa.net
+2025-11-20 23:29:12,806 - aggregator - INFO - Successfully parsed 25 articles from https://www.aljazeera.net
+2025-11-20 23:29:21,555 - __main__ - INFO - Processed 3 articles from https://www.aljazeera.net
+2025-11-20 23:29:22,565 - aggregator - ERROR - Error fetching data from https://www.skynewsarabia.com/rss: 403 Client Error: Forbidden for url: https://www.skynewsarabia.com/rss
+2025-11-20 23:29:22,568 - __main__ - INFO - Processed 0 articles from https://www.skynewsarabia.com
+2025-11-20 23:29:23,455 - aggregator - INFO - Successfully parsed 22 articles from https://www.france24.com
+2025-11-20 23:29:50,527 - __main__ - INFO - Processed 8 articles from https://www.france24.com
+2025-11-20 23:29:51,333 - aggregator - INFO - Successfully parsed 50 articles from https://arabic.euronews.com
+2025-11-20 23:30:00,507 - __main__ - INFO - Processed 3 articles from https://arabic.euronews.com
+2025-11-20 23:30:01,646 - aggregator - INFO - Successfully parsed 30 articles from https://alalam.ir
+2025-11-20 23:30:22,675 - __main__ - INFO - Processed 7 articles from https://alalam.ir
+2025-11-20 23:30:24,421 - aggregator - INFO - Successfully parsed 100 articles from https://arabic.rt.com
+2025-11-20 23:30:40,150 - __main__ - INFO - Processed 5 articles from https://arabic.rt.com
+2025-11-20 23:30:41,072 - aggregator - ERROR - An unexpected error occurred with https://www.alsumaria.tv/Rss/News/ar/49/%D8%AF%D9%88%D9%84%D9%8A%D8%A7%D8%AA: Incoming markup is of an invalid type: None. Markup must be a string, a bytestring, or an open filehandle.
+2025-11-20 23:30:41,074 - __main__ - INFO - Processed 0 articles from https://www.alsumaria.tv
+2025-11-20 23:30:46,997 - aggregator - ERROR - An unexpected error occurred with https://alhiwar.tv/feed/: Incoming markup is of an invalid type: None. Markup must be a string, a bytestring, or an open filehandle.
+2025-11-20 23:30:47,000 - __main__ - INFO - Processed 0 articles from https://alhiwar.tv
+2025-11-20 23:30:48,150 - aggregator - ERROR - Error fetching data from https://www.almasryalyoum.com/feed: 403 Client Error: Forbidden for url: https://www.almasryalyoum.com/feed
+2025-11-20 23:30:48,152 - __main__ - INFO - Processed 0 articles from https://www.almasryalyoum.com
+2025-11-20 23:30:49,506 - aggregator - WARNING - Could not parse date '22:10 | 20-11-2025' from https://www.elkhabar.com
+2025-11-20 23:30:49,507 - aggregator - WARNING - Could not parse date '21:51 | 20-11-2025' from https://www.elkhabar.com
+2025-11-20 23:30:49,509 - aggregator - WARNING - Could not parse date '21:27 | 20-11-2025' from https://www.elkhabar.com
+2025-11-20 23:30:49,510 - aggregator - WARNING - Could not parse date '21:13 | 20-11-2025' from https://www.elkhabar.com
+2025-11-20 23:30:49,512 - aggregator - WARNING - Could not parse date '21:02 | 20-11-2025' from https://www.elkhabar.com
+2025-11-20 23:30:49,514 - aggregator - WARNING - Could not parse date '11:33 | 19-11-2025' from https://www.elkhabar.com
+2025-11-20 23:30:49,515 - aggregator - WARNING - Could not parse date '11:31 | 19-11-2025' from https://www.elkhabar.com
+2025-11-20 23:30:49,516 - aggregator - WARNING - Could not parse date '09:39 | 18-11-2025' from https://www.elkhabar.com
+2025-11-20 23:30:49,517 - aggregator - WARNING - Could not parse date '09:38 | 18-11-2025' from https://www.elkhabar.com
+2025-11-20 23:30:49,518 - aggregator - WARNING - Could not parse date '09:37 | 18-11-2025' from https://www.elkhabar.com
+2025-11-20 23:30:49,519 - aggregator - WARNING - Could not parse date '10:36 | 16-11-2025' from https://www.elkhabar.com
+2025-11-20 23:30:49,520 - aggregator - WARNING - Could not parse date '13:54 | 11-11-2025' from https://www.elkhabar.com
+2025-11-20 23:30:49,521 - aggregator - WARNING - Could not parse date '22:02 | 31-10-2025' from https://www.elkhabar.com
+2025-11-20 23:30:49,522 - aggregator - WARNING - Could not parse date '20:15 | 25-10-2025' from https://www.elkhabar.com
+2025-11-20 23:30:49,523 - aggregator - WARNING - Could not parse date '11:22 | 22-10-2025' from https://www.elkhabar.com
+2025-11-20 23:30:49,523 - aggregator - INFO - Successfully parsed 15 articles from https://www.elkhabar.com
+2025-11-20 23:30:49,536 - __main__ - INFO - Processed 0 articles from https://www.elkhabar.com
+2025-11-20 23:30:49,546 - __main__ - INFO - Aggregation complete: 244 articles processed
+2025-11-20 23:30:49,548 - __main__ - INFO - Starting event clustering
+2025-11-20 23:30:49,562 - __main__ - INFO - Processing 244 unclustered articles
+2025-11-20 23:30:49,586 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-20 23:30:49,586 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: google/embeddinggemma-300m
+2025-11-20 23:30:56,934 - sentence_transformers.SentenceTransformer - INFO - 14 prompts are loaded, with the keys: ['query', 'document', 'BitextMining', 'Clustering', 'Classification', 'InstructionRetrieval', 'MultilabelClassification', 'PairClassification', 'Reranking', 'Retrieval', 'Retrieval-query', 'Retrieval-document', 'STS', 'Summarization']
+2025-11-20 23:32:51,372 - __main__ - INFO - Clustering complete: 164 clusters created
+2025-11-20 23:32:51,375 - __main__ - INFO - Updating trending topics...
+2025-11-20 23:32:51,920 - __main__ - INFO - Trending updates complete. Checked 485 clusters.
+2025-11-20 23:32:51,921 - __main__ - INFO - Full pipeline run completed successfully

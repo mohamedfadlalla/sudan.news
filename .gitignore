@@ -1,0 +1,4 @@
+.env
+sudan-news-api/.env
+sudan-news-pipeline/.env
+firebase_key.json

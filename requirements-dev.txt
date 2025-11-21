@@ -1,0 +1,18 @@
+# Development and testing tools
+pytest>=7.0.0
+pytest-cov>=4.0.0
+black>=22.0.0
+flake8>=6.0.0
+mypy>=1.0.0
+pre-commit>=3.0.0
+
+# Documentation
+mkdocs>=1.4.0
+mkdocs-material>=9.0.0
+
+# Development server
+watchdog>=3.0.0
+
+# Testing utilities
+faker>=18.0.0
+factory-boy>=3.2.0
