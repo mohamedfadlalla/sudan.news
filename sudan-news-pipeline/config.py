@@ -111,7 +111,7 @@ SCHEDULER_INTERVAL_HOURS = int(os.getenv('SCHEDULER_INTERVAL_HOURS', '6'))
 
 # Logging
 LOG_LEVEL = os.getenv('LOG_LEVEL', 'INFO')
-LOG_FILE = os.getenv('LOG_FILE', 'pipeline.log')
+LOG_FILE = os.getenv('LOG_FILE', 'shared/logs/pipeline.log')
 
 # Lock file for preventing concurrent runs
 LOCK_FILE = os.getenv('LOCK_FILE', 'pipeline.lock')

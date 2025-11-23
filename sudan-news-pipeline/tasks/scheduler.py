@@ -25,7 +25,7 @@ logging.basicConfig(
     level=getattr(logging, config.LOG_LEVEL),
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('scheduler.log'),
+        logging.FileHandler('../../../shared/logs/scheduler.log'),
         logging.StreamHandler()
     ]
 )

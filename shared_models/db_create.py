@@ -20,11 +20,16 @@ For production deployments with schema versioning, use Alembic migrations instea
 
 import os
 import sys
+import platform
 from datetime import datetime
 from dotenv import load_dotenv
 
 # Load environment variables
-load_dotenv()
+if platform.system() == 'Windows':
+    load_dotenv()
+else:
+    # On Ubuntu, load from shared/.env relative to project root
+    load_dotenv(os.path.join(os.path.dirname(__file__), '..', 'shared', '.env'))
 
 # Setup path for imports
 current_dir = os.path.dirname(__file__)
