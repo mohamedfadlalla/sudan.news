@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 if platform.system() == 'Windows':
     load_dotenv()
 else:
-    # On Ubuntu, load from shared/.env relative to project root
-    load_dotenv(os.path.join(os.path.dirname(__file__), '..', 'shared', '.env'))
+    # On Ubuntu, load from absolute path
+    load_dotenv('/var/www/sudanese_news/shared/.env')
 
 # Database
 DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///news_aggregator.db')
@@ -111,7 +111,7 @@ SCHEDULER_INTERVAL_HOURS = int(os.getenv('SCHEDULER_INTERVAL_HOURS', '6'))
 
 # Logging
 LOG_LEVEL = os.getenv('LOG_LEVEL', 'INFO')
-LOG_FILE = os.getenv('LOG_FILE', 'shared/logs/pipeline.log')
+LOG_FILE = os.getenv('LOG_FILE', '/var/www/sudanese_news/shared/logs/pipeline.log' if platform.system() != 'Windows' else 'shared/logs/pipeline.log')
 
 # Lock file for preventing concurrent runs
 LOCK_FILE = os.getenv('LOCK_FILE', 'pipeline.lock')

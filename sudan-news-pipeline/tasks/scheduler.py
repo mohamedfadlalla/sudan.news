@@ -21,11 +21,13 @@ from apscheduler.triggers.interval import IntervalTrigger
 import config
 
 # Setup logging
+import platform
+log_file_path = '/var/www/sudanese_news/shared/logs/scheduler.log' if platform.system() != 'Windows' else '../../../shared/logs/scheduler.log'
 logging.basicConfig(
     level=getattr(logging, config.LOG_LEVEL),
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('../../../shared/logs/scheduler.log'),
+        logging.FileHandler(log_file_path),
         logging.StreamHandler()
     ]
 )

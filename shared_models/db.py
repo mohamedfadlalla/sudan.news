@@ -7,11 +7,11 @@ from dotenv import load_dotenv
 if platform.system() == 'Windows':
     load_dotenv()
 else:
-    # On Ubuntu, load from shared/.env relative to project root
-    load_dotenv(os.path.join(os.path.dirname(__file__), '..', 'shared', '.env'))
+    # On Ubuntu, load from absolute path
+    load_dotenv('/var/www/sudanese_news/shared/.env')
 
 # Default database URL
-DEFAULT_DB_URL = 'sqlite:///../shared/news_aggregator.db'
+DEFAULT_DB_URL = 'sqlite:////var/www/sudanese_news/shared/news_aggregator.db' if platform.system() != 'Windows' else 'sqlite:///../shared/news_aggregator.db'
 
 def get_database_url() -> str:
     """Get database URL from environment or use default"""

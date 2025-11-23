@@ -18,8 +18,8 @@ from shared_models.repositories.cluster_repository import ClusterRepository
 if platform.system() == 'Windows':
     load_dotenv()
 else:
-    # On Ubuntu, load from shared/.env relative to project root
-    load_dotenv(os.path.join(os.path.dirname(__file__), '..', '..', 'shared', '.env'))
+    # On Ubuntu, load from absolute path
+    load_dotenv('/var/www/sudanese_news/shared/.env')
 
 login(os.getenv('HF_TOKEN'))
 
