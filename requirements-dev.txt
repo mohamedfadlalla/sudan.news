@@ -1,3 +1,11 @@
+# Runtime dependencies
+Flask>=2.0.0
+flask-cors>=4.0.0
+python-dotenv>=0.19.0
+gunicorn>=20.0.0
+sqlalchemy>=1.4.0
+alembic>=1.7.0
+
 # Development and testing tools
 pytest>=7.0.0
 pytest-cov>=4.0.0

@@ -1,11 +1,11 @@
 # Gunicorn configuration for production deployment
 
 # Server socket
-bind = "0.0.0.0:8000"
+bind = "127.0.0.1:8000"
 backlog = 2048
 
 # Worker processes
-workers = 4
+workers = 3
 worker_class = "sync"
 worker_connections = 1000
 max_requests = 1000
