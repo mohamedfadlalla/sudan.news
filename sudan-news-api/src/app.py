@@ -34,6 +34,7 @@ from shared_models.repositories.cluster_repository import ClusterRepository
 from shared_models.repositories.token_repository import TokenRepository
 from shared_models.repositories.article_repository import ArticleRepository
 from shared_models.repositories.source_repository import SourceRepository
+from shared_models.timezone_utils import now, to_app_timezone
 
 # Setup Flask app
 app = Flask(__name__,
@@ -50,8 +51,8 @@ def timeago_arabic_filter(date_string):
     """Convert date string to Arabic time ago format."""
     try:
         date = datetime.fromisoformat(date_string.replace('Z', '+00:00'))
-        now = datetime.now()
-        seconds = int((now - date).total_seconds())
+        current_time = now()
+        seconds = int((current_time - date).total_seconds())
 
         if seconds < 60:
             return "الآن"

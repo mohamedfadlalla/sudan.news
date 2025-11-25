@@ -4,6 +4,8 @@ from typing import List, Optional, Dict, Any, Tuple
 from datetime import datetime
 import numpy as np
 from ..models import Cluster, Article, cluster_articles, Entity
+from ..timezone_utils import now, format_datetime
+from ..timezone_utils import now, format_datetime
 
 class ClusterRepository:
     def __init__(self, session: Session):
@@ -14,7 +16,7 @@ class ClusterRepository:
                                    time_window_hours: int = 72) -> Optional[Tuple[Cluster, float]]:
         """Find the best matching cluster for a given embedding vector"""
         from datetime import timedelta
-        cutoff_time = datetime.now() - timedelta(hours=time_window_hours)
+        cutoff_time = now() - timedelta(hours=time_window_hours)
 
         # Get active clusters within time window
         active_clusters = self.session.query(Cluster).filter(
@@ -47,7 +49,7 @@ class ClusterRepository:
     def create_cluster(self, title: str, number_of_sources: int,
                       published_at: str) -> Cluster:
         """Create a new cluster"""
-        created_at = datetime.now().isoformat()
+        created_at = now().isoformat()
         cluster = Cluster(
             title=title,
             number_of_sources=number_of_sources,
@@ -335,7 +337,7 @@ class ClusterRepository:
         if not cluster:
             return False
         
-        now = datetime.now()
+        current_time = now()
         six_hours_ago = now - timedelta(hours=6)
         twelve_hours_ago = now - timedelta(hours=12)
         
@@ -390,4 +392,3 @@ class ClusterRepository:
             .all()
         
         return trending
-

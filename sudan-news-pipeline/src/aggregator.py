@@ -22,6 +22,7 @@ from shared_models.db import get_session
 from shared_models.repositories.source_repository import SourceRepository
 from shared_models.repositories.article_repository import ArticleRepository
 from shared_models.repositories.entity_repository import EntityRepository
+from shared_models.timezone_utils import to_app_timezone
 
 logger = logging.getLogger(__name__)
 
@@ -95,12 +96,14 @@ def parse_feed(feed_url, source_name):
             soup = BeautifulSoup(description_html, 'html.parser')
             description_text = soup.get_text(strip=True)
 
-            # Standardize date format to 'YYYY-MM-DD HH:MM:SS'
+            # Standardize date format to 'YYYY-MM-DD HH:MM:SS' in app timezone
             standardized_date = "N/A"
             if pub_date_str:
                 try:
                     parsed_date = parser.parse(pub_date_str)
-                    standardized_date = parsed_date.strftime('%Y-%m-%d %H:%M:%S')
+                    # Convert to app timezone and format
+                    app_timezone_date = to_app_timezone(parsed_date)
+                    standardized_date = app_timezone_date.strftime('%Y-%m-%d %H:%M:%S')
                 except parser.ParserError:
                     logger.warning(f"Could not parse date '{pub_date_str}' from {source_name}")
 

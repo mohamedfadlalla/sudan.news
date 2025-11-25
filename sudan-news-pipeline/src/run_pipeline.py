@@ -208,8 +208,8 @@ def update_trending():
         
         # Get recent clusters to check for trending status (last 48 hours)
         # We'll use a slightly larger window than the repo method to be safe
-        from datetime import datetime, timedelta
-        cutoff = datetime.now() - timedelta(hours=48)
+        from datetime import timedelta
+        cutoff = now() - timedelta(hours=48)
         
         recent_clusters = session.query(Cluster).filter(
             Cluster.published_at >= cutoff.isoformat()
