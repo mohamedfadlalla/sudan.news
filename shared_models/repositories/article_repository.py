@@ -1,3 +1,5 @@
+import hashlib
+import re
 from sqlalchemy.orm import Session
 from sqlalchemy import and_, desc, func, or_
 from typing import List, Optional, Dict, Any
@@ -7,6 +9,27 @@ from ..models import Article, Source, Entity
 class ArticleRepository:
     def __init__(self, session: Session):
         self.session = session
+
+    def _normalize_arabic(self, text):
+        """Normalize Arabic text by removing diacritics and standardizing characters."""
+        if not text:
+            return ""
+        # Remove diacritics (Tashkeel)
+        text = re.sub(r'[\u064B-\u065F\u0670]', '', text)
+        # Convert أ,إ,آ to ا
+        text = re.sub(r'[أإآ]', 'ا', text)
+        # Convert ة to ه
+        text = re.sub(r'ة', 'ه', text)
+        # Convert ى to ي
+        text = re.sub(r'ى', 'ي', text)
+        return text
+
+    def _compute_content_hash(self, headline: str, description: str) -> str:
+        """Compute SHA-256 hash of normalized headline + description for deduplication."""
+        normalized_headline = self._normalize_arabic(headline or "").strip().lower()
+        normalized_description = self._normalize_arabic(description or "").strip().lower()
+        content = f"{normalized_headline}|{normalized_description}"
+        return hashlib.sha256(content.encode('utf-8')).hexdigest()
 
     def get_recent_unclustered(self, hours: int = 24) -> List[Article]:
         """Get articles published in the last N hours that haven't been clustered"""
@@ -22,7 +45,17 @@ class ArticleRepository:
     def insert_article(self, source_id: int, headline: str, description: str,
                       published_at: str, article_url: str, image_url: str = None,
                       category: str = "local") -> Article:
-        """Insert a new article"""
+        """Insert a new article, checking for duplicates based on content hash."""
+        # Compute content hash for deduplication
+        content_hash = self._compute_content_hash(headline, description)
+
+        # Check if article with same content hash already exists
+        existing_article = self.session.query(Article).filter(Article.content_hash == content_hash).first()
+        if existing_article:
+            # Return existing article instead of creating duplicate
+            return existing_article
+
+        # Create new article
         created_at = datetime.now().isoformat()
         article = Article(
             source_id=source_id,
@@ -32,7 +65,8 @@ class ArticleRepository:
             article_url=article_url,
             image_url=image_url,
             created_at=created_at,
-            category=category
+            category=category,
+            content_hash=content_hash
         )
         self.session.add(article)
         self.session.flush()  # Get ID without committing

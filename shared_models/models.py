@@ -68,6 +68,7 @@ class Article(Base):
     created_at = Column(String)
     updated_at = Column(String)
     category = Column(String)  # 'local' or 'international'
+    content_hash = Column(String, unique=True)  # Hash of headline + description for deduplication
 
     # Relationships
     source = relationship("Source", back_populates="articles")

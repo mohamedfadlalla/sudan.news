@@ -146,6 +146,7 @@ class TestArticleRepository:
         assert article.headline == "Test Headline"
         assert article.source_id == source.id
         assert article.category == "local"  # default
+        assert article.content_hash is not None  # Hash should be computed
 
     def test_insert_article_with_category(self, test_db):
         """Test article insertion with custom category"""
@@ -164,6 +165,40 @@ class TestArticleRepository:
         )
 
         assert article.category == "international"
+
+    def test_insert_article_duplicate_prevention(self, test_db):
+        """Test that duplicate articles are not inserted"""
+        source_repo = SourceRepository(test_db)
+        article_repo = ArticleRepository(test_db)
+
+        source1 = source_repo.get_or_create_source("https://example1.com/rss")
+        source2 = source_repo.get_or_create_source("https://example2.com/rss")
+
+        # Insert first article
+        article1 = article_repo.insert_article(
+            source_id=source1.id,
+            headline="Same Headline",
+            description="Same Description",
+            published_at="2025-01-01T12:00:00",
+            article_url="https://example1.com/article1"
+        )
+
+        initial_count = test_db.query(Article).count()
+
+        # Try to insert duplicate article (same headline + description)
+        article2 = article_repo.insert_article(
+            source_id=source2.id,  # Different source
+            headline="Same Headline",
+            description="Same Description",
+            published_at="2025-01-01T13:00:00",  # Different time
+            article_url="https://example2.com/article1"  # Different URL
+        )
+
+        final_count = test_db.query(Article).count()
+
+        # Should return the same article, not create a new one
+        assert article1.id == article2.id
+        assert final_count == initial_count  # No new article added
 
     def test_get_by_id_found(self, test_db):
         """Test getting article by ID when it exists"""

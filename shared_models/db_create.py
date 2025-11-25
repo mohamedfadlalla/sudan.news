@@ -32,10 +32,8 @@ else:
     # On Ubuntu, load from absolute path
     load_dotenv('/var/www/sudanese_news/shared/.env')
 
-# Setup path for imports
-current_dir = os.path.dirname(__file__)
-if current_dir not in sys.path:
-    sys.path.insert(0, current_dir)
+# Get script directory
+script_dir = os.path.dirname(os.path.abspath(__file__))
 
 from shared_models.models import Base
 from shared_models.db import engine, get_session
@@ -63,7 +61,7 @@ def populate_sources():
         source_repo = SourceRepository(session)
 
         # Load sources from news_bias.json
-        news_bias_file = os.path.join(current_dir, 'news_bias.json')
+        news_bias_file = os.path.join(script_dir, 'news_bias.json')
         with open(news_bias_file, 'r', encoding='utf-8') as f:
             sources_data = json.load(f)
 
@@ -92,7 +90,7 @@ def main():
     print("=" * 50)
 
     # Check database URL
-    from db import get_database_url
+    from shared_models.db import get_database_url
     db_url = get_database_url()
     print(f"Database URL: {db_url}")
 
