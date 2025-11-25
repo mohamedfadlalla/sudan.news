@@ -6,7 +6,7 @@ class SourceRepository:
     def __init__(self, session: Session):
         self.session = session
 
-    def get_or_create_source(self, url: str, name: str = None, language: str = 'ar') -> Source:
+    def get_or_create_source(self, url: str, name: str = None, language: str = 'ar', bias: str = None) -> Source:
         """Get existing source or create new one"""
         source = self.session.query(Source).filter(Source.url == url).first()
         if source:
@@ -15,7 +15,7 @@ class SourceRepository:
         if not name:
             name = url  # Use URL as name if not provided
 
-        source = Source(name=name, url=url, language=language)
+        source = Source(name=name, url=url, language=language, bias=bias)
         self.session.add(source)
         self.session.flush()
         return source

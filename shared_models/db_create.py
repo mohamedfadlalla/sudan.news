@@ -21,6 +21,7 @@ For production deployments with schema versioning, use Alembic migrations instea
 import os
 import sys
 import platform
+import json
 from datetime import datetime
 from dotenv import load_dotenv
 
@@ -36,11 +37,11 @@ current_dir = os.path.dirname(__file__)
 if current_dir not in sys.path:
     sys.path.insert(0, current_dir)
 
-from models import Base
-from db import engine, get_session
-from repositories.source_repository import SourceRepository
-from repositories.article_repository import ArticleRepository
-from repositories.entity_repository import EntityRepository
+from shared_models.models import Base
+from shared_models.db import engine, get_session
+from shared_models.repositories.source_repository import SourceRepository
+from shared_models.repositories.article_repository import ArticleRepository
+from shared_models.repositories.entity_repository import EntityRepository
 
 def create_database():
     """Create all database tables"""
@@ -48,9 +49,9 @@ def create_database():
     Base.metadata.create_all(bind=engine)
     print("✓ Database tables created successfully")
 
-def populate_sample_data():
-    """Populate database with sample data for development"""
-    print("Populating sample data...")
+def populate_sources():
+    """Populate database with sources from news_bias.json"""
+    print("Populating sources from news_bias.json...")
 
     # Create session
     from sqlalchemy.orm import sessionmaker
@@ -58,80 +59,29 @@ def populate_sample_data():
     session = SessionLocal()
 
     try:
-        # Initialize repositories
+        # Initialize repository
         source_repo = SourceRepository(session)
-        article_repo = ArticleRepository(session)
-        entity_repo = EntityRepository(session)
 
-        # Create sample sources
-        sources_data = [
-            {"url": "https://sudanile.com/", "name": "Sudanile"},
-            {"url": "https://www.dabangasudan.org/", "name": "Dabanga Sudan"},
-            {"url": "https://www.aljazeera.net/", "name": "Al Jazeera"},
-        ]
+        # Load sources from news_bias.json
+        news_bias_file = os.path.join(current_dir, 'news_bias.json')
+        with open(news_bias_file, 'r', encoding='utf-8') as f:
+            sources_data = json.load(f)
 
-        sources = []
+        sources_created = 0
         for source_data in sources_data:
             source = source_repo.get_or_create_source(
-                source_data["url"],
-                source_data["name"]
+                url=source_data["website_url"],
+                name=source_data["Source_name"],
+                bias=source_data["Bias"]
             )
-            sources.append(source)
-
-        # Create sample articles
-        articles_data = [
-            {
-                "source": sources[0],
-                "headline": "Sample News Article 1",
-                "description": "This is a sample news article for testing purposes.",
-                "published_at": "2025-01-15T10:00:00",
-                "article_url": "https://sudanile.com/sample1",
-                "category": "local"
-            },
-            {
-                "source": sources[1],
-                "headline": "Sample News Article 2",
-                "description": "Another sample article with different content.",
-                "published_at": "2025-01-15T11:00:00",
-                "article_url": "https://dabanga.org/sample2",
-                "category": "local"
-            },
-            {
-                "source": sources[2],
-                "headline": "International News Sample",
-                "description": "Sample international news article.",
-                "published_at": "2025-01-15T12:00:00",
-                "article_url": "https://aljazeera.net/sample3",
-                "category": "international"
-            }
-        ]
-
-        for article_data in articles_data:
-            article = article_repo.insert_article(
-                source_id=article_data["source"].id,
-                headline=article_data["headline"],
-                description=article_data["description"],
-                published_at=article_data["published_at"],
-                article_url=article_data["article_url"],
-                category=article_data["category"]
-            )
-
-            # Add sample entities
-            entity_repo.insert_entities(
-                article_id=article.id,
-                people=["Sample Person"],
-                cities=["Khartoum"],
-                countries=["Sudan"],
-                organizations=["Sample Organization"],
-                category="سياسة"
-            )
+            sources_created += 1
 
         session.commit()
-        print("✓ Sample data populated successfully")
+        print(f"✓ Successfully populated {sources_created} sources with bias information")
 
     except Exception as e:
         session.rollback()
-        print(f"✗ Error populating sample data: {e}")
+        print(f"✗ Error populating sources: {e}")
         raise
     finally:
         session.close()
@@ -156,11 +106,9 @@ def main():
 
     # Create database
     create_database()
+    # Populate sources
+    populate_sources()
 
-    # Ask about sample data
-    response = input("\nPopulate with sample data? (y/N): ")
-    if response.lower() == 'y':
-        populate_sample_data()
 
     print("\n✓ Database setup complete!")
     print("\nNext steps:")
