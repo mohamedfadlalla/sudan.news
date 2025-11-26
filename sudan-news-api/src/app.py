@@ -37,7 +37,7 @@ from shared_models.repositories.source_repository import SourceRepository
 from shared_models.timezone_utils import now, to_app_timezone
 
 # Import notification service
-from notification_service import notification_service
+from .notification_service import notification_service
 
 # Setup Flask app
 app = Flask(__name__,
@@ -512,4 +512,4 @@ def health():
 if __name__ == '__main__':
     # Run Flask app (no scheduler - that's in the pipeline now)
     debug_mode = os.getenv('FLASK_ENV') != 'production'
-    app.run(debug=debug_mode, host='0.0.0.0', port=5000)
+    app.run(debug=debug_mode, host='0.0.0.0', port=5000, use_reloader=False)
