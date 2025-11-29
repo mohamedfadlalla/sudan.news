@@ -8,6 +8,7 @@ import os
 import json
 import logging
 from typing import List, Dict, Any, Optional
+import requests
 import firebase_admin
 from firebase_admin import credentials, messaging
 from firebase_admin.exceptions import FirebaseError
@@ -216,28 +217,93 @@ class NotificationService:
             logger.error(f"Error getting popular clusters: {e}")
             return []
 
+    def _is_expo_token(self, token: str) -> bool:
+        """Check if token is an Expo push token"""
+        return token.startswith('ExponentPushToken[')
+
+    def _send_expo_notification(self, token: str, title: str, body: str, data: Dict[str, str] = None) -> bool:
+        """
+        Send notification via Expo Push API
+
+        Args:
+            token: Expo push token
+            title: Notification title
+            body: Notification body
+            data: Additional data
+
+        Returns:
+            True if successful, False otherwise
+        """
+        try:
+            expo_payload = {
+                "to": token,
+                "title": title,
+                "body": body,
+                "data": data or {},
+                "sound": "default",
+                "priority": "default"
+            }
+
+            response = requests.post(
+                'https://exp.host/--/api/v2/push/send',
+                json=expo_payload,
+                headers={
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                timeout=10
+            )
+
+            if response.status_code == 200:
+                result = response.json()
+                if result.get('data', {}).get('status') == 'ok':
+                    logger.debug(f"Successfully sent Expo notification: {result}")
+                    return True
+                else:
+                    logger.error(f"Expo notification failed: {result}")
+                    return False
+            else:
+                logger.error(f"Expo API error {response.status_code}: {response.text}")
+                return False
+
+        except Exception as e:
+            logger.error(f"Error sending Expo notification: {e}")
+            return False
+
     def _send_single_notification(self, token: str, title: str, body: str, data: Dict[str, str] = None):
         """
         Send notification to a single device token
 
         Args:
-            token: FCM device token
+            token: Device token (FCM or Expo)
             title: Notification title
             body: Notification body
             data: Additional data
         """
-        message = messaging.Message(
-            notification=messaging.Notification(
-                title=title,
-                body=body,
-            ),
-            data=data or {},
-            token=token,
-        )
+        if self._is_expo_token(token):
+            # Send via Expo Push API
+            success = self._send_expo_notification(token, title, body, data)
+            if not success:
+                raise Exception(f"Failed to send Expo notification to token {token[:20]}...")
+        else:
+            # Send via Firebase Cloud Messaging
+            message = messaging.Message(
+                notification=messaging.Notification(
+                    title=title,
+                    body=body,
+                ),
+                data=data or {},
+                android=messaging.AndroidConfig(
+                    notification=messaging.AndroidNotification(
+                        channel_id="default"
+                    )
+                ),
+                token=token,
+            )
 
-        # Send the message
-        response = messaging.send(message)
-        logger.debug(f"Successfully sent message: {response}")
+            # Send the message
+            response = messaging.send(message)
+            logger.debug(f"Successfully sent FCM message: {response}")
 
     def cleanup_invalid_tokens(self) -> int:
         """
