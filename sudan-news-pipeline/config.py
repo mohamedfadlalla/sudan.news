@@ -12,7 +12,16 @@ else:
 DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///news_aggregator.db')
 
 # API Keys
-GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
+GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')  # Backward compatibility
+GOOGLE_API_KEYS = [
+    os.getenv('GOOGLE_API_KEY_1', os.getenv('GOOGLE_API_KEY')),  # Fallback to single key
+    os.getenv('GOOGLE_API_KEY_2'),
+    os.getenv('GOOGLE_API_KEY_3'),
+    os.getenv('GOOGLE_API_KEY_4')
+]
+# Filter out None values
+GOOGLE_API_KEYS = [key for key in GOOGLE_API_KEYS if key is not None]
+
 HF_TOKEN = os.getenv('HF_TOKEN')
 
 # Model Configuration
