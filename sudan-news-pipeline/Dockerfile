@@ -38,7 +38,7 @@ RUN mkdir -p /app/data
 # EXPOSE
 
 # Default command
-CMD ["python", "src/run_pipeline.py", "run-once"]
+CMD ["python", "-m", "src.run_pipeline", "run-once"]
 
 # Optional: GPU support (uncomment if using GPU)
 # FROM pytorch/pytorch:2.0.1-cuda11.8-cudnn8-runtime

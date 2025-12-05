@@ -56,16 +56,16 @@ The pipeline provides several CLI commands:
 
 ```bash
 # Run full pipeline (aggregate + cluster)
-python src/run_pipeline.py run-once
+python -m src.run_pipeline run-once
 
 # Run only aggregation phase
-python src/run_pipeline.py aggregate-only
+python -m src.run_pipeline aggregate-only
 
 # Run only clustering phase
-python src/run_pipeline.py cluster-only
+python -m src.run_pipeline cluster-only
 
 # Backfill news from last N days
-python src/run_pipeline.py backfill --days 7
+python -m src.run_pipeline backfill --days 7
 ```
 
 ### Scheduled Execution
@@ -80,7 +80,7 @@ For production, set up a cron job:
 
 ```bash
 # Add to crontab (crontab -e)
-0 */6 * * * cd /path/to/sudan-news-pipeline && python src/run_pipeline.py run-once >> pipeline.log 2>&1
+0 */6 * * * cd /path/to/sudan-news-pipeline && python -m src.run_pipeline run-once >> pipeline.log 2>&1
 ```
 
 ## Configuration
@@ -129,7 +129,7 @@ services:
     env_file: .env
     volumes:
       - ./data:/app/data
-    command: ["python", "src/run_pipeline.py", "run-once"]
+    command: ["python", "-m", "src.run_pipeline", "run-once"]
 ```
 
 ## RSS Feed Sources

@@ -105,7 +105,7 @@ def aggregate_news():
 
             for article_data in parsed_articles:
                 if category == 'local' or (category == 'international' and is_sudan_related(
-                    article_data['headline'] + ' ' + article_data['description'], source_url)):
+                    article_data, category)):
 
                     published_at = article_data['published_at'] if article_data['published_at'] != "N/A" else None
 
