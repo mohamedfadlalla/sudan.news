@@ -123,6 +123,50 @@ class NotificationService:
             return {'error': str(e)}
 
     # ------------------------------------------------------------------
+    # Get popular clusters for notification
+    # ------------------------------------------------------------------
+    def get_popular_clusters_for_notification(self) -> List[Dict[str, Any]]:
+        """Get clusters that have 2 or more articles (considered 'popular/developing' news)"""
+        try:
+            with get_session() as session:
+                repo = ClusterRepository(session)
+                # Get recent clusters from last 48 hours
+                from datetime import datetime, timedelta
+                cutoff = datetime.now() - timedelta(hours=48)
+
+                # Get recent clusters and filter those with 2+ articles
+                recent_clusters = repo.get_recent_clusters(limit=100)  # Get more to filter
+                popular_clusters = []
+
+                for cluster in recent_clusters:
+                    # Check if cluster was created within last 48 hours
+                    try:
+                        cluster_date = datetime.fromisoformat(cluster.created_at.replace('Z', '+00:00'))
+                        if cluster_date < cutoff:
+                            continue
+                    except:
+                        continue
+
+                    # Get cluster details to check article count
+                    cluster_details = repo.get_cluster_details(cluster.id)
+                    if cluster_details and len(cluster_details.get('articles', [])) >= 2:
+                        popular_clusters.append({
+                            'id': cluster.id,
+                            'title': cluster.title,
+                            'number_of_sources': cluster.number_of_sources,
+                            'article_count': len(cluster_details['articles']),
+                            'created_at': cluster.created_at
+                        })
+
+                # Sort by article count (most articles first) and limit to top 10
+                popular_clusters.sort(key=lambda x: x['article_count'], reverse=True)
+                return popular_clusters[:10]
+
+        except Exception as e:
+            logger.error(f"Error getting popular clusters for notification: {e}")
+            return []
+
+    # ------------------------------------------------------------------
     # Send popular cluster notification
     # ------------------------------------------------------------------
     def send_popular_cluster_notification(self, cluster_id: int) -> Dict[str, Any]:
@@ -134,14 +178,14 @@ class NotificationService:
             if not cluster:
                 return {'error': f'Cluster {cluster_id} not found'}
 
-            src = cluster.get("number_of_sources", 0)
-            title = "أهم الأخبار"
-            body = f"مجموعة أخبار تغطيها {src} مصدر: {cluster['title'][:40]}..."
+            article_count = len(cluster.get('articles', []))
+            title = "خبر متطور"
+            body = f"مجموعة أخبار تحتوي على {article_count} مقالة: {cluster['title'][:40]}..."
 
             data = {
                 "clusterId": str(cluster_id),
                 "type": "popular_cluster",
-                "sourceCount": str(src)
+                "articleCount": str(article_count)
             }
 
             return self.send_to_all_users(title, body, data)
