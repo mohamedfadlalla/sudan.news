@@ -216,9 +216,10 @@ def update_trending():
         cluster_repo = ClusterRepository(session)
         
         # Get recent clusters to check for trending status (last 48 hours)
-        # We'll use a slightly larger window than the repo method to be safe
-        from datetime import timedelta
-        cutoff = now() - timedelta(hours=48)
+        # FIXED: Imported datetime to resolve NameError on 'now()'
+        from datetime import datetime, timedelta
+        
+        cutoff = datetime.now() - timedelta(hours=48)
         
         recent_clusters = session.query(Cluster).filter(
             Cluster.published_at >= cutoff.isoformat()
@@ -242,9 +243,14 @@ def send_pipeline_completion_notification():
         # Get API base URL from environment or default
         api_base_url = os.getenv('API_BASE_URL', 'http://localhost:8000')
 
+        # FIXED: Added 'data' field to match the expected API structure
         notification_data = {
             "title": "تحديث الأخبار",
-            "body": "تم تحديث الأخبار بنجاح - Pipeline completed successfully"
+            "body": "تم تحديث الأخبار بنجاح - Pipeline completed successfully",
+            "data": {
+                "type": "system_status",
+                "action": "refresh_feed"
+            }
         }
 
         response = requests.post(
