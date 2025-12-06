@@ -547,7 +547,7 @@
                     tag.addEventListener('click', (e) => {
                         e.preventDefault();
                         document.querySelectorAll('.category-tag').forEach(t => t.classList.remove('active'));
-                        tag.classList.add('active';
+                        tag.classList.add('active');
                         currentCategory = tag.dataset.category;
                         reloadFeed();
                     });
